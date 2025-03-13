@@ -1,0 +1,16 @@
+﻿  main.cpp
+  monom.cpp
+  polinom.cpp
+  postfix.cpp
+  singlylist.cpp
+  Generating Code...
+C:\Users\vkutergi\source\lab1\laba1\LAB1\singlylist.cpp(154,37): error C2350: 'SinglyList<Type>::operator =' is not a static member
+      C:\Users\vkutergi\source\lab1\laba1\LAB1\singlylist.cpp(154,37):
+      see declaration of 'SinglyList<Type>::operator ='
+  
+C:\Users\vkutergi\source\lab1\laba1\LAB1\singlylist.cpp(154,47): error C2065: 'List': undeclared identifier
+C:\Users\vkutergi\source\lab1\laba1\LAB1\singlylist.cpp(154,54): error C2065: 'source': undeclared identifier
+C:\Users\vkutergi\source\lab1\laba1\LAB1\singlylist.cpp(154,62): error C2988: unrecognizable template declaration/definition
+C:\Users\vkutergi\source\lab1\laba1\LAB1\singlylist.cpp(154,62): error C2059: syntax error: 'noexcept'
+C:\Users\vkutergi\source\lab1\laba1\LAB1\singlylist.cpp(155,1): error C2143: syntax error: missing ';' before '{'
+C:\Users\vkutergi\source\lab1\laba1\LAB1\singlylist.cpp(155,1): error C2447: '{': missing function header (old-style formal list?)
