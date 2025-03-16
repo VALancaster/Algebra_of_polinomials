@@ -17,6 +17,7 @@ public:
 	TArryTable() = default;
 	size_t size() const noexcept;
 	TValue& operator[](size_t pos);
+	void Print();
 	void Delete(TKey key);
 	TValue* Find(TKey key);
 	void Insert(TKey key, TValue value);
