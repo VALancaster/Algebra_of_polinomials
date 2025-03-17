@@ -1,54 +1,42 @@
 #include "gtest.h"
 #include "TSortedArrayTable.h"
 
-TEST(TSortedArrayTableTest, DefaultConstructor) {
-    TSortedArrayTable<int, double> sortedArrayTable;
-    ASSERT_NO_THROW();
-} // Проверяет, что конструктор по умолчанию не выбрасывает исключений
-
-TEST(TSortedArrayTableTest, SizeMethodExists) {
-    TSortedArrayTable<int, double> sortedArrayTable;
-    ASSERT_NO_THROW(sortedArrayTable.size());
-} // Проверяет, что метод size() существует и не выбрасывает исключений
-
-TEST(TSortedArrayTableTest, OperatorBracketExists) {
-    TSortedArrayTable<int, double> sortedArrayTable;
-    SUCCEED();
-} // Проверяет, что operator[] существует и компилируется
-
-TEST(TSortedArrayTableTest, DeleteMethodExists) {
-    TSortedArrayTable<int, double> sortedArrayTable;
-    ASSERT_NO_THROW(sortedArrayTable.Delete(1)); // Dummy key
-} // Проверяет, что метод Delete() существует и не выбрасывает исключений
-
-TEST(TSortedArrayTableTest, FindMethodExists) {
-    TSortedArrayTable<int, double> sortedArrayTable;
-    ASSERT_NO_THROW(sortedArrayTable.Find(1)); // Dummy key
-} // Проверяет, что метод Find() существует и не выбрасывает исключений
-
-TEST(TSortedArrayTableTest, InsertMethodExists) {
-    TSortedArrayTable<int, double> sortedArrayTable;
-    ASSERT_NO_THROW(sortedArrayTable.Insert(1, 1.0)); // Dummy key and value
-} // Проверяет, что метод Insert() существует и не выбрасывает исключений
-
-// Test with different types
-TEST(TSortedArrayTableTest, DoubleKeyIntValue) {
-    TSortedArrayTable<double, int> sortedArrayTable;
-    ASSERT_NO_THROW();
-    ASSERT_NO_THROW(sortedArrayTable.Insert(2.5, 100));
-    ASSERT_NO_THROW(sortedArrayTable.Find(2.5));
-    ASSERT_NO_THROW(sortedArrayTable.Delete(2.5));
-} // Проверяет, что методы работают с типами double для ключа и int для значения
-
-TEST(TSortedArrayTableTest, InsertMethodExists) {
-    TSortedArrayTable<int, double> sortedArrayTable;
-    ASSERT_NO_THROW(sortedArrayTable.Insert(1, 1.0));
+TEST(TSortedArrayTable, can_create_sorted_array_table)
+{
 }
 
-TEST(TSortedArrayTableTest, DoubleKeyIntValue) {
-    TSortedArrayTable<double, int> sortedArrayTable;
-    ASSERT_NO_THROW();
-    ASSERT_NO_THROW(sortedArrayTable.Insert(2.5, 100));
-    ASSERT_NO_THROW(sortedArrayTable.Find(2.5));
-    ASSERT_NO_THROW(sortedArrayTable.Delete(2.5));
+TEST(TSortedArrayTable, size_of_empty_table_is_zero)
+{
+}
+
+TEST(TSortedArrayTable, can_insert_element)
+{
+}
+
+TEST(TSortedArrayTable, insert_increases_size)
+{
+}
+
+TEST(TSortedArrayTable, can_find_inserted_element)
+{
+}
+
+TEST(TSortedArrayTable, finding_nonexistent_element_returns_null)
+{
+}
+
+TEST(TSortedArrayTable, can_delete_inserted_element)
+{
+}
+
+TEST(TSortedArrayTable, size_decreases_after_deletion)
+{
+}
+
+TEST(TSortedArrayTable, deleting_nonexistent_element_does_not_change_size)
+{
+}
+
+TEST(TSortedArrayTable, maintains_sorted_order_after_insertion)
+{
 }

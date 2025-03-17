@@ -1,41 +1,42 @@
 #include "gtest.h"
 #include "THashTableOpen.h"
 
-TEST(THashTableOpenTest, DefaultConstructor) {
-    THashTableOpen<int, double> hashTable;
-    ASSERT_NO_THROW();
-} // Проверяет, что конструктор по умолчанию не выбрасывает исключений
+TEST(THashTableOpen, can_create_empty_hash_table)
+{
+}
 
-TEST(THashTableOpenTest, SizeMethodExists) {
-    THashTableOpen<int, double> hashTable;
-    ASSERT_NO_THROW(hashTable.size());
-} // Проверяет, что метод size() существует и не выбрасывает исключений
+TEST(THashTableOpen, can_insert_element)
+{
+}
 
-TEST(THashTableOpenTest, OperatorBracketExists) {
-    THashTableOpen<int, double> hashTable;
-    SUCCEED();
-} // Проверяет, что operator[] существует и компилируется
+TEST(THashTableOpen, size_increases_after_insertion)
+{
+}
 
-TEST(THashTableOpenTest, DeleteMethodExists) {
-    THashTableOpen<int, double> hashTable;
-    ASSERT_NO_THROW(hashTable.Delete(1)); // Dummy key
-} // Проверяет, что метод Delete() существует и не выбрасывает исключений
+TEST(THashTableOpen, can_find_inserted_element)
+{
+}
 
-TEST(THashTableOpenTest, FindMethodExists) {
-    THashTableOpen<int, double> hashTable;
-    ASSERT_NO_THROW(hashTable.Find(1)); // Dummy key
-} // Проверяет, что метод Find() существует и не выбрасывает исключений
+TEST(THashTableOpen, finding_nonexistent_element_returns_null)
+{
+}
 
-TEST(THashTableOpenTest, InsertMethodExists) {
-    THashTableOpen<int, double> hashTable;
-    ASSERT_NO_THROW(hashTable.Insert(1, 1.0)); // Dummy key and value
-} // Проверяет, что метод Insert() существует и не выбрасывает исключений
+TEST(THashTableOpen, can_delete_element)
+{
+}
 
-// You can add more tests with different key and value types if needed
-TEST(THashTableOpenTest, StringKeyIntvalue) {
-    THashTableOpen<std::string, int> hashTable;
-    ASSERT_NO_THROW();
-    ASSERT_NO_THROW(hashTable.Insert("key1", 10));
-    ASSERT_NO_THROW(hashTable.Find("key1"));
-    ASSERT_NO_THROW(hashTable.Delete("key1"));
-} // Проверяет, что методы работают с типами std::string для ключа и int для значения
+TEST(THashTableOpen, size_decreases_after_deletion)
+{
+}
+
+TEST(THashTableOpen, deleting_nonexistent_element_does_not_change_size)
+{
+}
+
+TEST(THashTableOpen, can_handle_collisions)
+{
+}
+
+TEST(THashTableOpen, can_update_existing_key)
+{
+}

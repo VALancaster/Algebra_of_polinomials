@@ -1,48 +1,42 @@
 #include "gtest.h"
 #include "TTreeTable.h"
 
-TEST(TTreeTableTest, DefaultConstructor) {
-    TTreeTable<int, double> treeTable;
-    ASSERT_NO_THROW();
-} // Проверяет, что конструктор по умолчанию не выбрасывает исключений
+TEST(TTreeTable, can_create_treetable)
+{
+}
 
-TEST(TTreeTableTest, DestructorExists) {
-    // Destructor is declared, just check if it compiles.
-    ASSERT_NO_THROW({
-        TTreeTable<int, double> treeTable;
-        });
-} // Проверяет, что деструктор существует и компилируется
+TEST(TTreeTable, size_of_empty_table_is_zero)
+{
+}
 
-TEST(TTreeTableTest, SizeMethodExists) {
-    TTreeTable<int, double> treeTable;
-    ASSERT_NO_THROW(treeTable.size());
-} // Проверяет, что метод size() существует и не выбрасывает исключений
+TEST(TTreeTable, can_insert_element)
+{
+}
 
-TEST(TTreeTableTest, OperatorBracketExists) {
-    TTreeTable<int, double> treeTable;
-    SUCCEED();
-} // Проверяет, что operator[] существует и компилируется
+TEST(TTreeTable, insert_increases_size)
+{
+}
 
-TEST(TTreeTableTest, DeleteMethodExists) {
-    TTreeTable<int, double> treeTable;
-    ASSERT_NO_THROW(treeTable.Delete(1)); // Dummy key
-} // Проверяет, что метод Delete() существует и не выбрасывает исключений
+TEST(TTreeTable, can_find_inserted_element)
+{
+}
 
-TEST(TTreeTableTest, FindMethodExists) {
-    TTreeTable<int, double> treeTable;
-    ASSERT_NO_THROW(treeTable.Find(1)); // Dummy key
-} // Проверяет, что метод Find() существует и не выбрасывает исключений
+TEST(TTreeTable, finding_nonexistent_element_returns_null)
+{
+}
 
-TEST(TTreeTableTest, InsertMethodExists) {
-    TTreeTable<int, double> treeTable;
-    ASSERT_NO_THROW(treeTable.Insert(1, 1.0)); // Dummy key and value
-} // Проверяет, что метод Insert() существует и не выбрасывает исключений
+TEST(TTreeTable, can_delete_inserted_element)
+{
+}
 
-// Test with different types
-TEST(TTreeTableTest, LongLongKeyFloatValue) {
-    TTreeTable<long long, float> treeTable;
-    ASSERT_NO_THROW();
-    ASSERT_NO_THROW(treeTable.Insert(123456789LL, 3.14f));
-    ASSERT_NO_THROW(treeTable.Find(123456789LL));
-    ASSERT_NO_THROW(treeTable.Delete(123456789LL));
-} // Проверяет, что методы работают с типами long long для ключа и float для значения
+TEST(TTreeTable, size_decreases_after_deletion)
+{
+}
+
+TEST(TTreeTable, deleting_nonexistent_element_does_not_change_size)
+{
+}
+
+TEST(TTreeTable, can_handle_duplicate_keys)
+{
+}

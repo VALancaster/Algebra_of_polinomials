@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\laba1",
+    "\\laba1\\base_test",
     "\\laba1\\LAB1"
   ],
-  "SelectedNode": "\\laba1\\LAB1\\stack.h",
+  "SelectedNode": "\\laba1\\base_test\\test_thashtableopen.cpp",
   "PreviewInSolutionExplorer": false
 }
