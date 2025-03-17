@@ -1,7 +1,7 @@
 #include "gtest.h"
 #include "THashTableOpen.h"
 
-TEST(THashTableOpen, can_create_empty_hash_table)
+TEST(THashTableOpen, can_create_empty_hashtableopen)
 {
 }
 

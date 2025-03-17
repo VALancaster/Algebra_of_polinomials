@@ -20,7 +20,6 @@ public:
 	TStack(const TStack&) = delete;
 	TStack& operator=(const TStack&) = delete;
 
-
 	TStack(TStack&& other) noexcept {
 		other.pMem = nullptr;
 		other.top = -1;
@@ -54,7 +53,7 @@ public:
 
 	T Pop() {
 		if (IsEmpty())
-			throw std::underflow_error("Stack is empty");
+			throw out_of_range("Stack is empty");
 		return pMem[top--];
 	}
 
@@ -63,7 +62,7 @@ public:
 		{
 			size *= 2;
 			T* tmp = new T[size];
-			std::copy(pMem, pMem + top + 1, tmp);
+			copy(pMem, pMem + top + 1, tmp);
 			delete[] pMem;
 			pMem = tmp;
 		}

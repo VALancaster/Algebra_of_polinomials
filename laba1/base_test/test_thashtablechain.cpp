@@ -1,7 +1,8 @@
 #include "THashTableChain.h"
 #include <gtest.h>
 
-
+TEST(THashTableChain, can_create_empty_hashtablechain)
+{}
 
 TEST(THashTableChain, can_get_size)
 {}

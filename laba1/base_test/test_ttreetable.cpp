@@ -25,10 +25,6 @@ TEST(TTreeTable, finding_nonexistent_element_returns_null)
 {
 }
 
-TEST(TTreeTable, can_delete_inserted_element)
-{
-}
-
 TEST(TTreeTable, size_decreases_after_deletion)
 {
 }

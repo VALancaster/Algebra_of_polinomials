@@ -1,7 +1,7 @@
 #include "gtest.h"
 #include "TSortedArrayTable.h"
 
-TEST(TSortedArrayTable, can_create_sorted_array_table)
+TEST(TSortedArrayTable, can_create_sortedarraytable)
 {
 }
 
@@ -22,10 +22,6 @@ TEST(TSortedArrayTable, can_find_inserted_element)
 }
 
 TEST(TSortedArrayTable, finding_nonexistent_element_returns_null)
-{
-}
-
-TEST(TSortedArrayTable, can_delete_inserted_element)
 {
 }
 

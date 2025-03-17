@@ -3,7 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\stack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|solutionrelative:stack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E60EE8C-853F-435F-98BE-6A0F364B1848}|..\\base_test\\base_test.vcxproj|C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\base_test\\test_tarraytable.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E60EE8C-853F-435F-98BE-6A0F364B1848}|..\\base_test\\base_test.vcxproj|C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\base_test\\test_tlisttable.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5E60EE8C-853F-435F-98BE-6A0F364B1848}|..\\base_test\\base_test.vcxproj|C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\base_test\\test_tsortedarraytable.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E60EE8C-853F-435F-98BE-6A0F364B1848}|..\\base_test\\base_test.vcxproj|C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\base_test\\test_ttreetable.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5E60EE8C-853F-435F-98BE-6A0F364B1848}|..\\base_test\\base_test.vcxproj|C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\base_test\\test_thashtablechain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
@@ -12,17 +25,8 @@
       "AbsoluteMoniker": "D:0:0:{5E60EE8C-853F-435F-98BE-6A0F364B1848}|..\\base_test\\base_test.vcxproj|C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\base_test\\test_thashtableopen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E60EE8C-853F-435F-98BE-6A0F364B1848}|..\\base_test\\base_test.vcxproj|C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\base_test\\test_tlisttable.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\TArrayTable.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|solutionrelative:TArrayTable.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E60EE8C-853F-435F-98BE-6A0F364B1848}|..\\base_test\\base_test.vcxproj|C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\base_test\\test_tarraytable.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E60EE8C-853F-435F-98BE-6A0F364B1848}|..\\base_test\\base_test.vcxproj|C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\base_test\\test_ttreetable.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,7 +36,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -40,72 +44,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "stack.h",
+              "DocumentMoniker": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\stack.h",
+              "RelativeDocumentMoniker": "stack.h",
+              "ToolTip": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\stack.h",
+              "RelativeToolTip": "stack.h",
+              "ViewState": "AgIAAC8AAABAZ2ZmZqYowEAAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-17T16:20:57.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "test_ttreetable.cpp",
               "DocumentMoniker": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\base_test\\test_ttreetable.cpp",
               "RelativeDocumentMoniker": "..\\base_test\\test_ttreetable.cpp",
               "ToolTip": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\base_test\\test_ttreetable.cpp",
               "RelativeToolTip": "..\\base_test\\test_ttreetable.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-17T15:40:18.177Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "test_tsortedarraytable.cpp",
               "DocumentMoniker": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\base_test\\test_tsortedarraytable.cpp",
               "RelativeDocumentMoniker": "..\\base_test\\test_tsortedarraytable.cpp",
               "ToolTip": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\base_test\\test_tsortedarraytable.cpp",
               "RelativeToolTip": "..\\base_test\\test_tsortedarraytable.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-17T15:40:16.112Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "test_tlisttable.cpp",
               "DocumentMoniker": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\base_test\\test_tlisttable.cpp",
               "RelativeDocumentMoniker": "..\\base_test\\test_tlisttable.cpp",
               "ToolTip": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\base_test\\test_tlisttable.cpp",
               "RelativeToolTip": "..\\base_test\\test_tlisttable.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-17T15:40:14.811Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "test_thashtableopen.cpp",
               "DocumentMoniker": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\base_test\\test_thashtableopen.cpp",
               "RelativeDocumentMoniker": "..\\base_test\\test_thashtableopen.cpp",
               "ToolTip": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\base_test\\test_thashtableopen.cpp",
               "RelativeToolTip": "..\\base_test\\test_thashtableopen.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-17T15:40:13.511Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "test_thashtablechain.cpp",
               "DocumentMoniker": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\base_test\\test_thashtablechain.cpp",
               "RelativeDocumentMoniker": "..\\base_test\\test_thashtablechain.cpp",
               "ToolTip": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\base_test\\test_thashtablechain.cpp",
               "RelativeToolTip": "..\\base_test\\test_thashtablechain.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-17T15:40:12.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "test_tarraytable.cpp",
               "DocumentMoniker": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\base_test\\test_tarraytable.cpp",
               "RelativeDocumentMoniker": "..\\base_test\\test_tarraytable.cpp",
@@ -118,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "TArrayTable.h",
               "DocumentMoniker": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\TArrayTable.h",
               "RelativeDocumentMoniker": "TArrayTable.h",

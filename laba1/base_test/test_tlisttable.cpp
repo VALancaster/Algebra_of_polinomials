@@ -1,7 +1,7 @@
 #include "gtest.h"
 #include "TListTable.h"
 
-TEST(TListTable, can_create_list_table)
+TEST(TListTable, can_create_listtable)
 {
 }
 
@@ -22,10 +22,6 @@ TEST(TListTable, can_find_inserted_element)
 }
 
 TEST(TListTable, finding_nonexistent_element_returns_null)
-{
-}
-
-TEST(TListTable, can_delete_inserted_element)
 {
 }
 
