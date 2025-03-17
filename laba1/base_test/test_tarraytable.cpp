@@ -1,6 +1,9 @@
 #include "TArrayTable.h"
 #include <gtest.h>
 
+TEST(TArrayTable, can_create_object)
+{}
+
 TEST(TArrayTable, can_get_size)
 {}
 

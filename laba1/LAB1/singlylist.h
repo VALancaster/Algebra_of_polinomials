@@ -153,7 +153,7 @@ public:
 		source.firstElement = source.lastElement = nullptr;
 		source.elementCount = 0;
 		return *this;
-	}
+	}1
 
 	class Iter {
 	private:
