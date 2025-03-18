@@ -34,7 +34,7 @@ public:
 	bool operator!=(const Monom& other) const;
 	Monom operator*(const Monom& other) const; // ?
 
-	double evaluate(double x, double y, double z) const;
+	double evaluate(double x_value, double y_value, double z_value) const;
 	string toString() const;
 };
 #endif
