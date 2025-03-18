@@ -1,29 +1,40 @@
-#ifndef MONOM_H
+﻿#ifndef MONOM_H
 #define MONOM_H
 
-using namespace std;
 #include <string>
-#include <unordered_map>
+
+using namespace std;
 
 static const int MAX_DEGREE = 9;
 
-class Monom {
+class Monom 
+{
+private:
+	double coef; // коэффициент 
+	int x, y, z; // степени переменных
 public:
-	double coeff;
-	std::unordered_map<char, int> powers;
-	int getDegreeHash() const;
-	Monom(double coeff = 0.0, int powerX = 0, int powerY = 0, int powerZ = 0);
-	Monom(const std::string& expression);
+	Monom(double coef = 0.0, int x2 = 0, int y2 = 0, int z2 = 0); //конструктор инициализатор + по умолчанию
+	Monom(const string& expression); // конструктор преобразования типа
+	Monom(const Monom& other); // конструктор копирования
 
+	double getCoef() const noexcept;
+	int getX() const noexcept;
+	int getY() const noexcept;
+	int getZ() const noexcept;
+
+	void setCoef(double c2);
+	void setX(int x2);
+	void setY(int y2);
+	void setZ(int z2);
+
+	Monom& operator=(const Monom& other);
 	bool operator<(const Monom& other) const;
 	bool operator>(const Monom& other) const;
 	bool operator==(const Monom& other) const;
 	bool operator!=(const Monom& other) const;
-
-	Monom operator*(const Monom& other) const;
+	Monom operator*(const Monom& other) const; // ?
 
 	double evaluate(double x, double y, double z) const;
-	std::string toString() const;
-
+	string toString() const;
 };
 #endif

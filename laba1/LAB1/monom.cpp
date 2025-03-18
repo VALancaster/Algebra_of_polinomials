@@ -1,76 +1,143 @@
-#include "monom.h"
+п»ї#include "monom.h"
 #include <cmath>
 #include <sstream>
 #include <stdexcept>
-#include <unordered_map>
 
-Monom::Monom(double coeff, int powerX, int powerY, int powerZ) {
-	if (powerX < 0 || powerY < 0 || powerZ < 0 || powerX > MAX_DEGREE || powerY > MAX_DEGREE || powerZ > MAX_DEGREE) {
-		throw std::invalid_argument("Некорректные степени переменных в мономе.");
-	}
-	this->coeff = coeff;
-	powers['x'] = powerX;
-	powers['y'] = powerY;
-	powers['z'] = powerZ;
+using namespace std;
+
+Monom::Monom(double coef = 0.0, int x2 = 0, int y2 = 0, int z2 = 0) 
+{
+	if (x2 < 0 || y2 < 0 || z2 < 0 || x2 > MAX_DEGREE || y2 > MAX_DEGREE || z2 > MAX_DEGREE)
+		throw invalid_argument("The degrees of the variables must be non-negative and less than 10");
 }
 
-Monom::Monom(const std::string& expr) {
-	coeff = 1.0;
-	powers['x'] = 0;
-	powers['y'] = 0;
-	powers['z'] = 0;
-	std::istringstream stream(expr);
-	bool negative = false;
-
-	if (!stream.eof() && stream.peek() == '-') {
+Monom::Monom(const string& expression) 
+{
+	coef = 1.0;
+	x = 0;
+	y = 0;
+	z = 0;
+	istringstream stream(expression); // СЃРѕР·РґР°РµС‚СЃСЏ РѕР±СЉРµРєС‚ - РїРѕС‚РѕРј РІРІРѕРґР°
+	bool negative = false; // Р·РЅР°Рє РјРѕРЅРѕРјР°
+	if (!stream.eof() && stream.peek() == '-') // stream.peek() - РІРѕР·РІСЂР°С‰Р°РµС‚ СЃР»РµРґСѓСЋС‰РёР№ СЃРёРјРІРѕР» РёР· РїРѕС‚РѕРєР°, РЅРµ СѓРґР°Р»СЏСЏ РµРіРѕ РёР· СЃР°РјРѕРіРѕ РїРѕС‚РѕРєР°
+	{
 		negative = true;
-		stream.ignore();
+		stream.ignore(); // РїСЂРѕРїСѓСЃРє СЃРёРјРІРѕР»Р° РІ РїРѕС‚РѕРєРµ
 	}
-
-	if (stream >> coeff) {
-		if (negative) {
-			coeff = -coeff;
-		}
+	if (stream >> coef) // РїРѕРїС‹С‚РєР° РёР·РІР»РµС‡СЊ РєРѕСЌС„С„РёС†РёРµРЅС‚ РёР· РїРѕС‚РѕРєР°
+	{
+		if (negative) 
+			coef = -coef;
 	}
-	else {
-		coeff = 1.0 * (negative ? -1 : 1);
-		stream.clear();
-		stream.seekg(0);
+	else 
+	{
+		coef = 1.0 * (negative ? -1 : 1);
+		stream.clear(); // cР±СЂРѕСЃ С„Р»Р°РіР° СЃРѕСЃС‚РѕСЏРЅРёСЏ РїРѕС‚РѕРєР° (РѕС€РёР±РєРё fР°ilbit)
+		stream.seekg(0); // РІРѕР·РІСЂР°С‚ СѓРєР°Р·Р°С‚РµР»СЏ РЅР° РЅР°С‡Р°Р»Рѕ РїРѕС‚РѕРєР° РґР»СЏ РїРѕРІС‚РѕСЂРЅРѕРіРѕ С‡С‚РµРЅРёСЏ
 	}
-
 	char variable;
-	while (stream >> variable) {
-		if (powers.find(variable) == powers.end()) {
-			throw std::invalid_argument("Некорректная переменная в мономе.");
-		}
+	while (stream >> variable) 
+	{
+		if (variable != 'x' || variable != 'y' || variable != 'z')
+			throw invalid_argument("Only variables 'x', 'y', 'z' are allowed");
 		int degree = 0;
-		if (stream.peek() == '^') {
+		if (stream.peek() == '^') 
+		{
 			stream.ignore();
 			stream >> degree;
 		}
-		else {
+		else 
 			degree = 1;
-		}
-		if (degree < 0 || degree > MAX_DEGREE) {
-			throw std::invalid_argument("Степень переменной превышает допустимое значение.");
-		}
-		powers[variable] = degree;
+		if (degree < 0 || degree > MAX_DEGREE) 
+			throw invalid_argument("The degrees of the variables must be non-negative and less than 10");
+		if (variable == 'x')
+			x = degree;
+		else if (variable == 'y')
+			y = degree;
+		else
+			z = degree;
 	}
 }
 
-bool Monom::operator<(const Monom& other) const {
-	return getDegreeHash() < other.getDegreeHash();
+Monom::Monom(const Monom& other) : coef(other.coef), x(other.x), y(other.y), z(other.z) {}
+
+double Monom::getCoef() const noexcept
+{
+	return coef;
 }
 
-bool Monom::operator>(const Monom& other) const {
-	return getDegreeHash() > other.getDegreeHash();
+int Monom::getX() const noexcept
+{
+	return x;
 }
 
-bool Monom::operator==(const Monom& other) const {
-	return coeff == other.coeff && powers == other.powers;
+int Monom::getY() const noexcept
+{
+	return y;
 }
 
-bool Monom::operator!=(const Monom& other) const {
+int Monom::getZ() const noexcept
+{
+	return z;
+}
+
+void Monom::setCoef(double c2)
+{
+	coef = c2;
+}
+
+void Monom::setX(int x2)
+{
+	x = x2;
+}
+
+void Monom::setY(int y2)
+{
+	y = y2;
+}
+
+void Monom::setZ(int z2)
+{
+	z = z2;
+}
+
+Monom& Monom::operator=(const Monom& other)
+{
+	if (this != &other)
+	{
+		coef = other.coef;
+		x = other.x;
+		y = other.y;
+		z = other.z;
+	}
+	return  *this;
+}
+
+bool Monom::operator<(const Monom& other) const 
+{
+	if (x != other.x)
+		return x < other.x;
+	if (y != other.y)
+		return y < other.y;
+	return z < other.z;
+}
+
+bool Monom::operator>(const Monom& other) const
+{
+	if (x != other.x)
+		return x > other.x;
+	if (y != other.y)
+		return y > other.y;
+	return z > other.z;
+}
+
+bool Monom::operator==(const Monom& other) const 
+{
+	return x == other.x && y == other.y && z == other.z;
+}
+
+bool Monom::operator!=(const Monom& other) const 
+{
 	return !(*this == other);
 }
 
@@ -80,7 +147,7 @@ Monom Monom::operator*(const Monom& other) const {
 	int newPowerZ = powers.at('z') + other.powers.at('z');
 
 	if (newPowerX > MAX_DEGREE || newPowerY > MAX_DEGREE || newPowerZ > MAX_DEGREE) {
-		throw std::invalid_argument("Результирующий моном превышает максимально допустимую степень.");
+		throw std::invalid_argument("ГђГҐГ§ГіГ«ГјГІГЁГ°ГіГѕГ№ГЁГ© Г¬Г®Г­Г®Г¬ ГЇГ°ГҐГўГ»ГёГ ГҐГІ Г¬Г ГЄГ±ГЁГ¬Г Г«ГјГ­Г® Г¤Г®ГЇГіГ±ГІГЁГ¬ГіГѕ Г±ГІГҐГЇГҐГ­Гј.");
 	}
 
 	return Monom(coeff * other.coeff, newPowerX, newPowerY, newPowerZ);
