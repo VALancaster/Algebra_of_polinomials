@@ -1,24 +1,28 @@
 #ifndef POLINOM_H
 #define POLINOM_H
 
-using namespace std;
 #include "singlylist.h"
 #include "monom.h"
 #include <string>
 #include <sstream>
 #include <cctype>
 
-class Polinom {
+using namespace std;
+
+class Polinom 
+{
+private:
+	SinglyList<Monom> monoms;
 public:
-	SinglyList<Monom> monomList;
-	void removeZeroMonoms();
-	Polinom() {};
-	Polinom(const std::string& polynomialStr);
+	Polinom() = default;
+	Polinom(const string& str);
 	Polinom(const Polinom& other);
+
+	void removeZeroMonoms();
 
 	void addMonom(const Monom& monom);
 	double evaluate(double x, double y, double z) const;
-	std::string toString() const;
+	string toString() const;
 	Polinom derivative(char var) const;
 
 	Polinom& operator=(const Polinom& other);
@@ -34,7 +38,7 @@ public:
 	bool operator==(const Polinom& other) const;
 	bool operator!=(const Polinom& other) const;
 
-	friend std::ostream& operator<<(std::ostream& out, const Polinom& polinom);
+	friend ostream& operator<<(ostream& out, const Polinom& polinom);
 };
 
 #endif

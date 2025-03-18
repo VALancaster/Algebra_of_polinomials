@@ -61,46 +61,6 @@ Monom::Monom(const string& expression)
 
 Monom::Monom(const Monom& other) : coef(other.coef), x(other.x), y(other.y), z(other.z) {}
 
-double Monom::getCoef() const noexcept
-{
-	return coef;
-}
-
-int Monom::getX() const noexcept
-{
-	return x;
-}
-
-int Monom::getY() const noexcept
-{
-	return y;
-}
-
-int Monom::getZ() const noexcept
-{
-	return z;
-}
-
-void Monom::setCoef(double c2)
-{
-	coef = c2;
-}
-
-void Monom::setX(int x2)
-{
-	x = x2;
-}
-
-void Monom::setY(int y2)
-{
-	y = y2;
-}
-
-void Monom::setZ(int z2)
-{
-	z = z2;
-}
-
 Monom& Monom::operator=(const Monom& other)
 {
 	if (this != &other)

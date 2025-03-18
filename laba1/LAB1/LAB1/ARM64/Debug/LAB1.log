@@ -1,16 +1,87 @@
 ﻿  main.cpp
   monom.cpp
   polinom.cpp
-  postfix.cpp
-  singlylist.cpp
-  Generating Code...
-C:\Users\vkutergi\source\lab1\laba1\LAB1\singlylist.cpp(154,37): error C2350: 'SinglyList<Type>::operator =' is not a static member
-      C:\Users\vkutergi\source\lab1\laba1\LAB1\singlylist.cpp(154,37):
-      see declaration of 'SinglyList<Type>::operator ='
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\monom.cpp(8,28): error C2572: 'Monom::Monom': redefinition of default argument: parameter 1
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\monom.h(15,2):
+      see declaration of 'Monom::Monom'
   
-C:\Users\vkutergi\source\lab1\laba1\LAB1\singlylist.cpp(154,47): error C2065: 'List': undeclared identifier
-C:\Users\vkutergi\source\lab1\laba1\LAB1\singlylist.cpp(154,54): error C2065: 'source': undeclared identifier
-C:\Users\vkutergi\source\lab1\laba1\LAB1\singlylist.cpp(154,62): error C2988: unrecognizable template declaration/definition
-C:\Users\vkutergi\source\lab1\laba1\LAB1\singlylist.cpp(154,62): error C2059: syntax error: 'noexcept'
-C:\Users\vkutergi\source\lab1\laba1\LAB1\singlylist.cpp(155,1): error C2143: syntax error: missing ';' before '{'
-C:\Users\vkutergi\source\lab1\laba1\LAB1\singlylist.cpp(155,1): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\monom.cpp(8,42): error C2572: 'Monom::Monom': redefinition of default argument: parameter 2
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\monom.h(15,2):
+      see declaration of 'Monom::Monom'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\monom.cpp(8,54): error C2572: 'Monom::Monom': redefinition of default argument: parameter 3
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\monom.h(15,2):
+      see declaration of 'Monom::Monom'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\monom.cpp(8,66): error C2572: 'Monom::Monom': redefinition of default argument: parameter 4
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\monom.h(15,2):
+      see declaration of 'Monom::Monom'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\singlylist.h(156,3): error C2059: syntax error: 'constant'
+  (compiling source file 'polinom.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\singlylist.h(156,3):
+      the template instantiation context (the oldest one first) is
+          C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\singlylist.h(8,7):
+          while compiling class template 'SinglyList'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\singlylist.h(167,3): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'polinom.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\polinom.cpp(47,28): error C2039: 'coeff': is not a member of 'Monom'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\monom.h(10,8):
+      see declaration of 'Monom'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\polinom.cpp(57,12): error C2039: 'coeff': is not a member of 'Monom'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\monom.h(10,8):
+      see declaration of 'Monom'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\polinom.cpp(63,21): error C2039: 'getDegreeHash': is not a member of 'Monom'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\monom.h(10,8):
+      see declaration of 'Monom'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\polinom.cpp(63,46): error C2039: 'getDegreeHash': is not a member of 'Monom'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\monom.h(10,8):
+      see declaration of 'Monom'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\polinom.cpp(64,18): error C2039: 'coeff': is not a member of 'Monom'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\monom.h(10,8):
+      see declaration of 'Monom'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\polinom.cpp(64,33): error C2039: 'coeff': is not a member of 'Monom'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\monom.h(10,8):
+      see declaration of 'Monom'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\polinom.cpp(108,13): error C2039: 'powers': is not a member of 'Monom'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\monom.h(10,8):
+      see declaration of 'Monom'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\polinom.cpp(108,44): error C2039: 'powers': is not a member of 'Monom'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\monom.h(10,8):
+      see declaration of 'Monom'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\polinom.cpp(109,10): error C2039: 'coeff': is not a member of 'Monom'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\monom.h(10,8):
+      see declaration of 'Monom'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\polinom.cpp(109,25): error C2039: 'powers': is not a member of 'Monom'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\monom.h(10,8):
+      see declaration of 'Monom'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\polinom.cpp(110,10): error C2039: 'powers': is not a member of 'Monom'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\monom.h(10,8):
+      see declaration of 'Monom'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\polinom.cpp(153,17): error C2039: 'coeff': is not a member of 'Monom'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\monom.h(10,8):
+      see declaration of 'Monom'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\polinom.cpp(153,40): error C2039: 'coeff': is not a member of 'Monom'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\monom.h(10,8):
+      see declaration of 'Monom'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\polinom.cpp(172,10): error C2039: 'coeff': is not a member of 'Monom'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\monom.h(10,8):
+      see declaration of 'Monom'
+  
+  postfix.cpp
+  Generating Code...

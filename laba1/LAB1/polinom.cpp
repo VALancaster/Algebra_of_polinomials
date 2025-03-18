@@ -4,40 +4,36 @@
 #include <algorithm>
 #include <cctype>
 
-Polinom::Polinom(const std::string& polynomialStr) {
+using namespace std;
+
+Polinom::Polinom(const string& str) 
+{
 	size_t pos = 0;
-	size_t length = polynomialStr.size();
-
-	while (pos < length) {
-		while (pos < length && std::isspace(polynomialStr[pos])) {
+	size_t length = str.size();
+	while (pos < length) 
+	{
+		while (pos < length && isspace(str[pos])) // ??????? ???? ???????? ? ?????????
 			pos++;
-		}
-
-		if (pos >= length) break;
-
-		size_t startPos = pos;
-
-		if (polynomialStr[pos] == '+' || polynomialStr[pos] == '-') {
+		if (pos >= length) 
+			break;
+		size_t startPos = pos; // ?????? ??????
+		if (str[pos] == '+' || str[pos] == '-') // ??????? ?????
 			pos++;
-		}
-
-		while (pos < length && !std::isspace(polynomialStr[pos]) && polynomialStr[pos] != '+' && polynomialStr[pos] != '-') {
+		while (pos < length && !isspace(str[pos]) && str[pos] != '+' && str[pos] != '-') // ???? ?? ????? ???????? ??????
 			pos++;
-		}
-
-		std::string monomStr = polynomialStr.substr(startPos, pos - startPos);
-		if (!monomStr.empty() && monomStr.find_first_not_of(" \t") != std::string::npos) {
-			Monom monom(monomStr);
+		string monomStr = str.substr(startPos, pos - startPos); // ????????? - ?????
+		if (!monomStr.empty() && monomStr.find_first_not_of(" \t") != -1) // ?? ????? ? ???????? ???? ???? ?????? - ?? ??????? ? ?? ?????????
+		{ 
+			Monom monom(monomStr); // ???????? ?????? ?? ??????
 			addMonom(monom);
 		}
 	}
-
 	removeZeroMonoms();
 }
 
 Polinom::Polinom(const Polinom& other) {
-	for (const auto& monom : other.monomList) {
-		monomList.addToEnd(monom);
+	for (const auto& monom : other.monoms) {
+		monoms.addToEnd(monom);
 	}
 }
 
@@ -115,7 +111,6 @@ Polinom Polinom::derivative(char var) const {
 	result.removeZeroMonoms();
 	return result;
 }
-
 
 Polinom& Polinom::operator=(const Polinom& other) {
 	if (this != &other) {
@@ -210,7 +205,7 @@ bool Polinom::operator!=(const Polinom& other) const {
 	return !(*this == other);
 }
 
-std::ostream& operator<<(std::ostream& out, const Polinom& polinom) {
+ostream& operator<<(ostream& out, const Polinom& polinom) {
 	out << polinom.toString();
 	return out;
 }

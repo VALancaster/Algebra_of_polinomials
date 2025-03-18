@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\polinom.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|solutionrelative:polinom.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\singlylist.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|solutionrelative:singlylist.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\polinom.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|solutionrelative:polinom.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\monom.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|solutionrelative:monom.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\monom.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|solutionrelative:monom.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\polinom.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|solutionrelative:polinom.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,38 +38,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "singlylist.h",
+              "DocumentMoniker": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\singlylist.h",
+              "RelativeDocumentMoniker": "singlylist.h",
+              "ToolTip": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\singlylist.h",
+              "RelativeToolTip": "singlylist.h",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-18T18:20:13.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "polinom.cpp",
               "DocumentMoniker": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\polinom.cpp",
               "RelativeDocumentMoniker": "polinom.cpp",
               "ToolTip": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\polinom.cpp",
               "RelativeToolTip": "polinom.cpp",
-              "ViewState": "AgIAAAUAAAAAAAAAAAB2vS4AAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-17T22:17:39.95Z"
+              "WhenOpened": "2025-03-17T22:17:39.95Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "polinom.h",
+              "DocumentMoniker": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\polinom.h",
+              "RelativeDocumentMoniker": "polinom.h",
+              "ToolTip": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\polinom.h",
+              "RelativeToolTip": "polinom.h",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-18T17:00:21.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "monom.cpp",
               "DocumentMoniker": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\monom.cpp",
               "RelativeDocumentMoniker": "monom.cpp",
               "ToolTip": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\monom.cpp",
               "RelativeToolTip": "monom.cpp",
-              "ViewState": "AgIAALAAAACAm5mZmZkOwMcAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-17T22:11:07.526Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "monom.h",
               "DocumentMoniker": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\monom.h",
               "RelativeDocumentMoniker": "monom.h",
               "ToolTip": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\monom.h",
               "RelativeToolTip": "monom.h",
-              "ViewState": "AgIAABsAAAAQNTMzMzMrwCQAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAACAAgAAAAABwBsAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-17T22:11:04.891Z",
               "EditorCaption": ""
