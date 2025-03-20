@@ -33,9 +33,7 @@ Polinom::Polinom(const string& str)
 
 Polinom::Polinom(const Polinom& other) {
 	for (const auto& monom : other.monoms) 
-	{
 		monoms.addToEnd(monom);
-	}
 }
 
 void Polinom::removeZeroMonoms() 
@@ -95,116 +93,140 @@ string Polinom::toString() const {
 	return result.empty() ? "0" : result; // если строка осталась пустой - вернется '0', иначе полином
 }
 
-Polinom Polinom::derivative(char var) const {
+Polinom Polinom::derivative(char var) const 
+{
 	Polinom result;
-
-	for (const auto& monom : monomList) {
+	for (const auto& monom : monoms) 
+	{
 		Monom deriv = monom;
-		if (deriv.powers.count(var) > 0 && deriv.powers.at(var) > 0) {
-			deriv.coeff *= deriv.powers[var];
-			deriv.powers[var] -= 1;
+		if (var == 'x' && deriv.x > 0)  
+		{
+			deriv.coef *= deriv.x;
+			deriv.x -= 1;
+			result.addMonom(deriv);
+		}
+		if (var == 'y' && deriv.y > 0)
+		{
+			deriv.coef *= deriv.y;
+			deriv.y -= 1;
+			result.addMonom(deriv);
+		}
+		if (var == 'z' && deriv.z > 0)
+		{
+			deriv.coef *= deriv.z;
+			deriv.z -= 1;
 			result.addMonom(deriv);
 		}
 	}
-
 	result.removeZeroMonoms();
 	return result;
 }
 
-Polinom& Polinom::operator=(const Polinom& other) {
-	if (this != &other) {
-		monomList.reset();
-		for (const auto& monom : other.monomList) {
-			monomList.addToEnd(monom);
-		}
+Polinom& Polinom::operator=(const Polinom& other) 
+{
+	if (this != &other) 
+	{
+		monoms.reset();
+		for (const auto& monom : other.monoms) 
+			monoms.addToEnd(monom);
 	}
 	return *this;
 }
 
-Polinom Polinom::operator+(const Polinom& other) const {
+Polinom Polinom::operator+(const Polinom& other) const 
+{
 	Polinom result(*this);
 	result += other;
 	return result;
 }
 
-Polinom& Polinom::operator+=(const Polinom& other) {
-	for (const auto& monom : other.monomList) {
+Polinom& Polinom::operator+=(const Polinom& other) 
+{
+	for (const auto& monom : other.monoms) 
 		addMonom(monom);
-	}
 	removeZeroMonoms();
 	return *this;
 }
 
-Polinom Polinom::operator-(const Polinom& other) const {
+Polinom Polinom::operator-(const Polinom& other) const 
+{
 	Polinom result(*this);
 	result -= other;
 	return result;
 }
 
-Polinom& Polinom::operator-=(const Polinom& other) {
-	for (auto it = other.monomList.begin(); it != other.monomList.end(); ++it) {
-		Monom invertedMonom = *it;
-		invertedMonom.coeff = -invertedMonom.coeff;
+Polinom& Polinom::operator-=(const Polinom& other) 
+{
+	for (const auto& monom : other.monoms)
+	{
+		Monom invertedMonom = monom;
+		invertedMonom.coef = -invertedMonom.coef;
 		addMonom(invertedMonom);
 	}
 	removeZeroMonoms();
 	return *this;
 }
 
-Polinom Polinom::operator*(double constant) const {
+Polinom Polinom::operator*(double constant) const 
+{
 	Polinom result(*this);
 	result *= constant;
 	return result;
 }
 
-Polinom& Polinom::operator*=(double constant) {
-	if (constant == 0.0) {
-		monomList.reset();
-	}
-	else {
-		for (auto& monom : monomList) {
-			monom.coeff *= constant;
-		}
+Polinom& Polinom::operator*=(double constant) 
+{
+	if (constant == 0.0) 
+		monoms.reset(); // cписок очищается
+	else 
+	{
+		for (auto& monom : monoms) 
+			monom.coef *= constant; // домножение каждого коэффициента
 	}
 	return *this;
 }
 
-Polinom Polinom::operator*(const Polinom& other) const {
+Polinom Polinom::operator*(const Polinom& other) const 
+{
 	Polinom result;
-
-	for (const auto& monom1 : monomList) {
-		for (const auto& monom2 : other.monomList) {
+	for (const auto& monom1 : monoms) // берется моном исходного полинома
+	{
+		for (const auto& monom2 : other.monoms) // берется моном полинома, на который умножаем
+		{
 			Monom product = monom1 * monom2;
-			result.addMonom(product);
+			result.addMonom(product); // добавляет моном с упрощением
 		}
 	}
 	result.removeZeroMonoms();
 	return result;
 }
 
-Polinom& Polinom::operator*=(const Polinom& other) {
+Polinom& Polinom::operator*=(const Polinom& other) 
+{
 	Polinom result = (*this) * other;
-	*this = result;
+	*this = result; // результат копируется из временного монома в текущий
 	return *this;
 }
 
-bool Polinom::operator==(const Polinom& other) const {
-	if (monomList.length() != other.monomList.length()) {
+bool Polinom::operator==(const Polinom& other) const 
+{
+	if (monoms.length() != other.monoms.length()) 
 		return false;
-	}
-	for (size_t i = 0; i < monomList.length(); ++i) {
-		if (monomList.getItem(i) != other.monomList.getItem(i)) {
+	for (size_t i = 0; i < monoms.length(); ++i) 
+	{
+		if (monoms.getItem(i) != other.monoms.getItem(i)) 
 			return false;
-		}
 	}
 	return true;
 }
 
-bool Polinom::operator!=(const Polinom& other) const {
+bool Polinom::operator!=(const Polinom& other) const 
+{
 	return !(*this == other);
 }
 
-ostream& operator<<(ostream& out, const Polinom& polinom) {
+ostream& operator<<(ostream& out, const Polinom& polinom) 
+{
 	out << polinom.toString();
 	return out;
 }
