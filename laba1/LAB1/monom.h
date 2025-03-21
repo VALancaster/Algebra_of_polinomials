@@ -5,8 +5,6 @@
 
 using namespace std;
 
-static const int MAX_DEGREE = 9;
-
 struct Monom
 {
 	double coef; // коэффициент 

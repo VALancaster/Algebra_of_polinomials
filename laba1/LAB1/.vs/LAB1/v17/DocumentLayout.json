@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|solutionrelative:polinom.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\singlylist.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|solutionrelative:singlylist.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\polinom.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|solutionrelative:polinom.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\monom.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|solutionrelative:monom.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\polinom.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|solutionrelative:polinom.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\monom.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|solutionrelative:monom.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\singlylist.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|solutionrelative:singlylist.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +38,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "singlylist.h",
               "DocumentMoniker": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\singlylist.h",
               "RelativeDocumentMoniker": "singlylist.h",
@@ -46,8 +46,7 @@
               "RelativeToolTip": "singlylist.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-18T18:20:13.454Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T18:20:13.454Z"
             },
             {
               "$type": "Document",
@@ -57,14 +56,14 @@
               "RelativeDocumentMoniker": "polinom.cpp",
               "ToolTip": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\polinom.cpp",
               "RelativeToolTip": "polinom.cpp",
-              "ViewState": "AgIAAK8AAACQz8zMzIwjwOMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAIwI0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-17T22:17:39.95Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "polinom.h",
               "DocumentMoniker": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\polinom.h",
               "RelativeDocumentMoniker": "polinom.h",
@@ -83,20 +82,20 @@
               "RelativeDocumentMoniker": "monom.cpp",
               "ToolTip": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\monom.cpp",
               "RelativeToolTip": "monom.cpp",
-              "ViewState": "AgIAAAEAAAAAZ2ZmZuYcwG0AAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-17T22:11:07.526Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "monom.h",
               "DocumentMoniker": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\monom.h",
               "RelativeDocumentMoniker": "monom.h",
               "ToolTip": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\monom.h",
               "RelativeToolTip": "monom.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-17T22:11:04.891Z",
               "EditorCaption": ""

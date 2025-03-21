@@ -5,11 +5,7 @@
 
 using namespace std;
 
-Monom::Monom(double coef = 0.0, int x2 = 0, int y2 = 0, int z2 = 0) 
-{
-	if (x2 < 0 || y2 < 0 || z2 < 0 || x2 > MAX_DEGREE || y2 > MAX_DEGREE || z2 > MAX_DEGREE)
-		throw invalid_argument("The degrees of the variables must be non-negative and less than 10");
-}
+Monom::Monom(double coef2 = 0.0, int x2 = 0, int y2 = 0, int z2 = 0) : coef(coef2), x(x2), y(y2), z(z2) {}
 
 Monom::Monom(const string& expression) 
 {
@@ -48,8 +44,8 @@ Monom::Monom(const string& expression)
 		}
 		else 
 			degree = 1;
-		if (degree < 0 || degree > MAX_DEGREE) 
-			throw invalid_argument("The degrees of the variables must be non-negative and less than 10");
+		if (degree < 0) 
+			throw invalid_argument("The degrees of the variables must be non-negative");
 		if (variable == 'x')
 			x = degree;
 		else if (variable == 'y')
@@ -106,8 +102,6 @@ Monom Monom::operator*(const Monom& other) const
 	int new_x = x + other.x;
 	int new_y = y + other.y;
 	int new_z = z + other.z;
-	if (new_x > MAX_DEGREE || new_y > MAX_DEGREE || new_z > MAX_DEGREE) 
-		throw runtime_error("The degrees of the variables must be less than 10");
 	return Monom(coef * other.coef, new_x, new_y, new_z);
 }
 
