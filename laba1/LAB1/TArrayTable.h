@@ -63,4 +63,19 @@ void TArrayTable::Insert(TKey key, TValue value)
 	data.push_back({ key, value });
 }
 
+void TArrayTable<TKey, TValue>::Print()
+{
+	cout << "Printing table contents: " << endl;
+	// Перебираем все записи в таблице
+	for (const auto& record : data)
+	{
+		cout << "Key: " << record.key << ", Value: " << record.value << endl;
+	}
+	// Проверка на случай, если таблица пустая
+	if (data.empty())
+	{
+		cout << "The table is empty." << endl;
+	}
+}
+
 #endif
