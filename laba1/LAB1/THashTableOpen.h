@@ -3,38 +3,161 @@
 
 #include "TTable.h"
 #include <vector>
+#include <iostream>
+#include <optional> // Для std::nullopt
 
 template <typename TKey, typename TValue>
 class THashTableOpen : public TTable // хеш-таблица с открытым перемешиванием
 {
-	struct Node 
-	{
-		TKey key;
-		TValue value;
-		bool isOccupied;
-	};
+    struct Node
+    {
+        TKey key;
+        TValue value;
+        bool isOccupied = false;
+        bool isDeleted = false; // Флаг для пометки удалённых ячеек
+    };
 
-	vector<Node> data{};
+    std::vector<Node> data;
+    size_t bucketCount;
+
+    size_t HashFunction(TKey key) const;
+
 public:
-	THashTableOpen() = default;
-	size_t size() const noexcept;
-	TValue& operator[](size_t pos);
-	void Print();
-	void Delete(TKey key);
-	TValue* Find(TKey key);
-	void Insert(TKey key, TValue value);
+    THashTableOpen(size_t buckets = 10) : bucketCount(buckets)
+    {
+        data.resize(bucketCount);
+    }
+
+    size_t size() const noexcept;
+    TValue& operator[](TKey key);
+    void Print() const;
+    void Delete(TKey key);
+    TValue* Find(TKey key);
+    void Insert(TKey key, TValue value);
 };
 
-size_t THashTableOpen::size() const noexcept
+template <typename TKey, typename TValue>
+size_t THashTableOpen<TKey, TValue>::HashFunction(TKey key) const
 {
-	return data.size();
+    return std::hash<TKey>()(key) % bucketCount;
 }
 
-TValue& THashTableOpen::operator[](size_t pos)
+template <typename TKey, typename TValue>
+size_t THashTableOpen<TKey, TValue>::size() const noexcept
 {
-	return data[pos].value;
+    size_t count = 0;
+    for (const auto& node : data)
+    {
+        if (node.isOccupied && !node.isDeleted)
+        {
+            count++;
+        }
+    }
+    return count;
 }
 
-// ...
+template <typename TKey, typename TValue>
+TValue& THashTableOpen<TKey, TValue>::operator[](TKey key)
+{
+    size_t index = HashFunction(key);
+    size_t start_index = index;
+
+    while (data[index].isOccupied)
+    {
+        if (data[index].key == key && !data[index].isDeleted)
+            return data[index].value;
+
+        index = (index + 1) % bucketCount;
+        if (index == start_index)
+            throw std::out_of_range("Key not found");
+    }
+
+    throw std::out_of_range("Key not found");
+}
+
+template <typename TKey, typename TValue>
+void THashTableOpen<TKey, TValue>::Print() const
+{
+    std::cout << "Hash table contents:" << std::endl;
+    for (size_t i = 0; i < data.size(); ++i)
+    {
+        if (data[i].isOccupied && !data[i].isDeleted)
+        {
+            std::cout << "Index " << i << ": (" << data[i].key << ": " << data[i].value << ")" << std::endl;
+        }
+    }
+}
+
+template <typename TKey, typename TValue>
+void THashTableOpen<TKey, TValue>::Delete(TKey key)
+{
+    size_t index = HashFunction(key);
+    size_t start_index = index;
+
+    while (data[index].isOccupied)
+    {
+        if (data[index].key == key && !data[index].isDeleted)
+        {
+            data[index].isDeleted = true;
+            return;
+        }
+
+        index = (index + 1) % bucketCount;
+        if (index == start_index)
+            return;
+    }
+}
+
+template <typename TKey, typename TValue>
+TValue* THashTableOpen<TKey, TValue>::Find(TKey key)
+{
+    size_t index = HashFunction(key);
+    size_t start_index = index;
+
+    while (data[index].isOccupied)
+    {
+        if (data[index].key == key && !data[index].isDeleted)
+            return &data[index].value;
+
+        index = (index + 1) % bucketCount;
+        if (index == start_index)
+            return nullptr;
+    }
+    return nullptr;
+}
+
+template <typename TKey, typename TValue>
+void THashTableOpen<TKey, TValue>::Insert(TKey key, TValue value)
+{
+    size_t index = HashFunction(key);
+    size_t start_index = index;
+    bool foundDeleted = false;
+    size_t deletedIndex = 0;
+
+    while (data[index].isOccupied && !data[index].isDeleted)
+    {
+        if (data[index].key == key)
+        {
+            data[index].value = value;
+            return;
+        }
+
+        index = (index + 1) % bucketCount;
+        if (index == start_index)
+            throw std::overflow_error("Hash table is full");
+    }
+
+    if (!data[index].isOccupied)
+    {
+        data[index] = { key, value, true, false };
+    }
+    else
+    {
+        data[index].key = key;
+        data[index].value = value;
+        data[index].isOccupied = true;
+        data[index].isDeleted = false;
+    }
+}
 
 #endif
