@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\singlylist.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|solutionrelative:singlylist.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\Controller.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BA53775F-762E-4824-A98F-4F448BA9B18E}|LAB1.vcxproj|solutionrelative:Controller.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -35,19 +39,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "singlylist.h",
+              "DocumentMoniker": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\singlylist.h",
+              "RelativeDocumentMoniker": "singlylist.h",
+              "ToolTip": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\singlylist.h",
+              "RelativeToolTip": "singlylist.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAL8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-30T14:12:20.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Controller.h",
               "DocumentMoniker": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\Controller.h",
               "RelativeDocumentMoniker": "Controller.h",
               "ToolTip": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\Controller.h",
               "RelativeToolTip": "Controller.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAANDMzMzMLwBUAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-24T14:37:16.345Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "postfix.cpp",
               "DocumentMoniker": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\postfix.cpp",
               "RelativeDocumentMoniker": "postfix.cpp",
@@ -55,12 +72,11 @@
               "RelativeToolTip": "postfix.cpp",
               "ViewState": "AgIAAFQAAAAAAAAAAAAAAA0AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-21T22:29:03.407Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T22:29:03.407Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "postfix.h",
               "DocumentMoniker": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\postfix.h",
               "RelativeDocumentMoniker": "postfix.h",
@@ -68,12 +84,11 @@
               "RelativeToolTip": "postfix.h",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-21T22:28:58.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T22:28:58.59Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "stack.h",
               "DocumentMoniker": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\LAB1\\stack.h",
               "RelativeDocumentMoniker": "stack.h",
@@ -81,8 +96,7 @@
               "RelativeToolTip": "stack.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-21T22:11:19.95Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T22:11:19.95Z"
             }
           ]
         }
