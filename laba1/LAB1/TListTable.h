@@ -50,7 +50,6 @@ public:
                 return;
             }
         }
-        throw std::runtime_error("Key not found for deletion");
     }
 
     TValue* Find(TKey key)
@@ -65,9 +64,8 @@ public:
 
     void Insert(TKey key, TValue value)
     {
-        if (Find(key)) {
-            throw std::runtime_error("Key already exists");
-        }
+        if (Find(key)) 
+            return;
         data.push_back(TTableRec{ key, value });
     }
 };

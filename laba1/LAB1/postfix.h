@@ -1,4 +1,4 @@
-#ifndef POSTFIX_H
+﻿#ifndef POSTFIX_H
 #define POSTFIX_H
 
 #include <iostream>
@@ -10,15 +10,18 @@
 #include <algorithm>
 #include <limits>
 #include "stack.h"
+#include "polinom.h"
 
 using namespace std;
 
-class TPostfix {
+class TPostfix 
+{
 	string infix;
 	string postfix;
-	vector<string> lexems;
-	map<string, double> operands;
+	vector<string> lexems; // и операнды, и операторы
+	map<string, Monom> operands; // операнды
 	static map<char, int> priority;
+
 	void ParseInf();
 	void ToPostfix();
 public:
@@ -26,7 +29,7 @@ public:
 	string GetInfix() const;
 	string GetPostfix() const;
 	vector<string> GetOperands() const;
-	double Calculate(const map<string, double>& values);
+	double Calculate(double first_val, double second_val, double third_val); // так как не требуется map, поскольку всегда 3 переменных
 };
 
 #endif

@@ -144,7 +144,7 @@ void THashTableOpen<TKey, TValue>::Insert(TKey key, TValue value)
 
         index = (index + 1) % bucketCount;
         if (index == start_index)
-            throw std::overflow_error("Hash table is full");
+            return;
     }
 
     if (!data[index].isOccupied)

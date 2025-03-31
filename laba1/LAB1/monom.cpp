@@ -5,7 +5,7 @@
 
 using namespace std;
 
-Monom::Monom(double coef2 = 0.0, int x2 = 0, int y2 = 0, int z2 = 0) : coef(coef2), x(x2), y(y2), z(z2) {}
+Monom::Monom(double coef2, int x2, int y2, int z2) : coef(coef2), x(x2), y(y2), z(z2) {}
 
 Monom::Monom(const string& expression) 
 {
