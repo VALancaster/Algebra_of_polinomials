@@ -2,9 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\laba1",
-    "\\laba1\\LAB1",
-    "\\laba1\\LAB1\\LAB1\\ARM64"
+    "\\laba1\\base_test",
+    "\\laba1\\LAB1"
   ],
-  "SelectedNode": "\\laba1\\LAB1\\TTreeTable.h",
+  "SelectedNode": "\\laba1\\base_test\\test_monom.cpp",
   "PreviewInSolutionExplorer": false
 }
