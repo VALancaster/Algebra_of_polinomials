@@ -18,6 +18,7 @@ public:
 	size_t size() const noexcept;
 	TValue& operator[](size_t pos);
 	void Print();
+	string GetName() const override;
 	void Delete(TKey key);
 	TValue* Find(TKey key);
 	void Insert(TKey key, TValue value);
@@ -61,6 +62,11 @@ void TArrayTable::Insert(TKey key, TValue value)
 	if (Find(key))
 		return;
 	data.push_back({ key, value });
+}
+
+string TArrayTable<TKey, TValue>::GetName() const override
+{
+	return "Array Table";
 }
 
 void TArrayTable<TKey, TValue>::Print()

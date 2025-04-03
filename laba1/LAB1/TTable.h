@@ -4,12 +4,15 @@
 #include "Polinom.h"
 #include <string>
 
-class TTable() // абстрактный класс Таблица
+using namespace std;
+
+class TTable // абстрактный класс Таблица
 {
 public:
-	virtual void Insert(const std::string& name, const Polinom& pol) = 0;
-	virtual void Delete(const std::string& name) = 0;
-	virtual Polinom Find(const std::string& name) const = 0;
+	virtual string GetName() const = 0;
+	virtual void Insert(const string& name, const Polinom& pol) = 0;
+	virtual void Delete(const string& name) = 0;
+	virtual Polinom Find(const string& name) const = 0;
 	virtual void Print() const = 0;
 };
 

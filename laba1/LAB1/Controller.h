@@ -6,17 +6,24 @@
 #include <vector>
 #include <iostream>
 
+using namespace std;
+
 class Controller // контроллер таблиц
 {
 	vector<TTable*> tables;
 	TTable* active_table;
-	TPostfix postfix_processor;
 public:
 	Controller(): active_table(nullptr) {}
-	void SetActiveTable(TTable* table);
-	void AddPolinom(const std::string& name, const Polinom& pol);
-	Polinom EvaluateExpression(const std::string& expression);
-	void PrintActivetable();
+	Controller(const Controller& source) = delete;
+	Controller& operator=(const Controller& source) = delete;
+
+	~Controller();
+
+	void SetActiveTable(int index);
+	void AddPolinom(const string& name, const Polinom& pol);
+	void DeletePolinom(const string& name);
+	Polinom EvaluateExpression(const string& expression, double x, double y, double z);
+	void PrintActiveTable() const;
 };
 
 #endif

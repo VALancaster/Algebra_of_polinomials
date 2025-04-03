@@ -27,6 +27,7 @@ public:
     size_t size() const noexcept;
     TValue& operator[](TKey key);
     void Print() const;
+    string GetName() const override;
     void Delete(TKey key);
     TValue* Find(TKey key);
     void Insert(TKey key, TValue value);
@@ -59,6 +60,12 @@ TValue& THashTableChain<TKey, TValue>::operator[](TKey key)
             return node.value;
     }
     throw std::out_of_range("Key not found");
+}
+
+template <typename TKey, typename TValue>
+string THashTableChain<TKey, TValue>::GetName() const override
+{
+    return "Hash Table Chain";
 }
 
 template <typename TKey, typename TValue>

@@ -42,6 +42,11 @@ public:
         }
     }
 
+    string GetName() const override
+    {
+        return "List Table";
+    }
+
     void Delete(TKey key)
     {
         for (auto it = data.begin(); it != data.end(); ++it) {

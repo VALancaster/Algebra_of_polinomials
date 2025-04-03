@@ -31,6 +31,7 @@ public:
     size_t size() const noexcept;
     TValue& operator[](TKey key);
     void Print() const;
+    string GetName() const override;
     void Delete(TKey key);
     TValue* Find(TKey key);
     void Insert(TKey key, TValue value);
@@ -86,6 +87,12 @@ void THashTableOpen<TKey, TValue>::Print() const
             std::cout << "Index " << i << ": (" << data[i].key << ": " << data[i].value << ")" << std::endl;
         }
     }
+}
+
+template <typename TKey, typename TValue>
+string GetName() const override
+{
+    return "Hash Table Open";
 }
 
 template <typename TKey, typename TValue>

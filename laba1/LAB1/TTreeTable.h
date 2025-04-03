@@ -188,6 +188,11 @@ public:
         Print(pRoot);
     }
 
+    string GetName() const override
+    {
+        return "Tree Table";
+    }
+
     void Delete(TKey key)
     {
         pRoot = DeleteNode(pRoot, key);
