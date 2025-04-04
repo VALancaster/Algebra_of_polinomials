@@ -2,7 +2,7 @@
 #define CONTROLLER_H
 
 #include "TTable.h"
-#include "Postfix.h"
+#include "postfix.h"
 #include <vector>
 #include <iostream>
 
