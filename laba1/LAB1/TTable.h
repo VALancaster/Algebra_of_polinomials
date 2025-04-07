@@ -9,6 +9,7 @@ using namespace std;
 class TTable // абстрактный класс Таблица
 {
 public:
+	virtual ~TTable() = default;
 	virtual string GetName() const = 0;
 	virtual void Insert(const string& name, const Polinom& pol) = 0;
 	virtual void Delete(const string& name) = 0;

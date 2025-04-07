@@ -13,18 +13,18 @@ TPostfix::TPostfix(string infx) : infix(infx)
 
 string GetInfix() const 
 {
-	return infix;
+	return TPostfix::infix;
 }
 
 string GetPostfix() const 
 {
-	return postfix;
+	return TPostfix::postfix;
 }
 
-vector<string> GetOperands() const // вернет вектор операндов (символов)
+vector<string> GetOperands() // вернет вектор операндов (символов)
 { 
 	vector<string> oper;
-	for (const auto& item : operands) 
+	for (const auto& item : TPostfix::operands) 
 		oper.push_back(item.first);
 	return oper;
 }
@@ -56,7 +56,7 @@ void ToPostfix()
 	ParseInf();
 	TStack<string> s;
 	string Stack_el;
-	for (const string& elem : lexems) 
+	for (const string& elem : TPostfix::lexems) 
 	{
 		if (elem == "(") 
 			s.Push(elem);

@@ -121,7 +121,8 @@ class TTreeTable : public TTable // Таблица с использование
         else if (key > pNode->data.key) {
             pNode->pRight = DeleteNode(pNode->pRight, key);
         }
-        else {
+        else 
+        {
             if (pNode->pLeft == nullptr || pNode->pRight == nullptr) {
                 TreeNode* tmp = pNode->pLeft ? pNode->pLeft : pNode->pRight;
                 delete pNode;

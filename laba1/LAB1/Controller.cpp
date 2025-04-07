@@ -5,12 +5,12 @@ using namespace std;
 Controller::Controller()
 {
 	// инициализация всех таблиц
-	tables.push_back(new TArrayTable());
-	tables.push_back(new TListTable());
-	tables.push_back(new TSortedArrayTable());
-	tables.push_back(new TTreeTable());
-	tables.push_back(new THashTableOpen());
-	tables.push_back(new THashTableChain());
+	tables.push_back(new TArrayTable<string, Polinom>());
+	tables.push_back(new TListTable<string, Polinom>());
+	tables.push_back(new TSortedArrayTable<string, Polinom>());
+	tables.push_back(new TTreeTable<string, Polinom>());
+	tables.push_back(new THashTableOpen<string, Polinom>());
+	tables.push_back(new THashTableChain<string, Polinom>());
 
 	// по умолчанию активная таблица
 	if (!tables.empty())

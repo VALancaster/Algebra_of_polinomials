@@ -24,7 +24,6 @@ int main() {
     Controller controller;
     string key, input;
     char var;
-    TPostfix postfix_processor;
 
     while (true) {
         printMenu();
@@ -127,45 +126,4 @@ int main() {
     }
 
     return 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-case 5: {
-    string input;
-    cout << "Введите выражение (например, new_pol = 2 * pol1 + 3.6 * q - const1): ";
-    getline(cin, input);
-
-    size_t eq_pos = input.find('=');
-    if (eq_pos == string::npos) {
-        cout << "Ошибка: выражение должно содержать '='\n";
-        break;
-    }
-
-    string name = input.substr(0, eq_pos);
-    string expression = input.substr(eq_pos + 1);
-
-    // удалим пробелы вокруг имени (вдруг пользователь ввёл "  new_pol   =  ...")
-    name.erase(0, name.find_first_not_of(" \t"));
-    name.erase(name.find_last_not_of(" \t") + 1);
-
-    try {
-        Polinom result = controller.EvaluatePolinomExpression(name, expression);
-        cout << "Полином '" << name << "' успешно вычислен и сохранён.\n";
-        result.Print(); // если хочешь сразу показать результат
-    }
-    catch (const exception& e) {
-        cout << "Ошибка: " << e.what() << "\n";
-    }
-
-    break;
 }

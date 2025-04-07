@@ -14,7 +14,7 @@ class TArrayTable : public TTable // таблица на массиве
 	};
 	vector<TTableRec> data{};
 public:
-	TArryTable() = default;
+	TArrayTable() = default;
 	size_t size() const noexcept;
 	TValue& operator[](size_t pos);
 	void Print();
@@ -24,17 +24,20 @@ public:
 	void Insert(TKey key, TValue value);
 };
 
-size_t TArrayTable::size() const noexcept
+template <typename TKey, typename TValue>
+size_t TArrayTable<TKey, TValue>::size() const noexcept
 {
-	return data.size();
+	return TArrayTable::data.size();
 }
 
-TValue& TArrayTable::operator[](size_t pos)
+template <typename TKey, typename TValue>
+TValue& TArrayTable<TKey, TValue>::operator[](size_t pos)
 {
 	return data[pos].value;
 }
 
-void TArrayTable::Delete(TKey key)
+template <typename TKey, typename TValue>
+void TArrayTable<TKey, TValue>::Delete(TKey key)
 {
 	for (size_t i = 0; i < data.size(); i++)
 	{
@@ -47,7 +50,8 @@ void TArrayTable::Delete(TKey key)
 	}
 }
 
-TValue* TArrayTable::Find(TKey key)
+template <typename TKey, typename TValue>
+TValue* TArrayTable<TKey, TValue>::Find(TKey key)
 {
 	for (auto& val : data)
 	{
@@ -57,18 +61,21 @@ TValue* TArrayTable::Find(TKey key)
 	return nullptr;
 }
 
-void TArrayTable::Insert(TKey key, TValue value)
+template <typename TKey, typename TValue>
+void TArrayTable<TKey, TValue>::Insert(TKey key, TValue value)
 {
 	if (Find(key))
 		return;
 	data.push_back({ key, value });
 }
 
+template <typename TKey, typename TValue>
 string TArrayTable<TKey, TValue>::GetName() const override
 {
 	return "Array Table";
 }
 
+template <typename TKey, typename TValue>
 void TArrayTable<TKey, TValue>::Print()
 {
 	cout << "Printing table contents: " << endl;
