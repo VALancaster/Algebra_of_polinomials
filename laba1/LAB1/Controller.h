@@ -2,6 +2,12 @@
 #define CONTROLLER_H
 
 #include "TTable.h"
+#include "TArrayTable.h"
+#include "THashTableChain.h"
+#include "THashTableOpen.h"
+#include "TListTable.h"
+#include "TSortedArrayTable.h"
+#include "TTreeTable.h"
 #include "postfix.h"
 #include <vector>
 #include <iostream>

@@ -1,18 +1,234 @@
 ﻿  Controller.cpp
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(5,12): error C2059: syntax error: ')'
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(5,16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(5,28): error C2440: 'initializing': cannot convert from 'nullptr' to 'int'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(5,28):
-      A native nullptr can only be converted to bool or, using reinterpret_cast, to an integral type
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(17,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Controller.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(17,2):
+      the template instantiation context (the oldest one first) is
+          C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(8,7):
+          while compiling class template 'TArrayTable'
   
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(6,1): error C2059: syntax error: '{'
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(6,1): error C2143: syntax error: missing ';' before '{'
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(6,1): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(17,17): error C2610: 'int TArrayTable<TKey,TValue>::TArryTable(void)': is not a special member function or comparison operator which can be defaulted
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(17,2): warning C4183: 'TArryTable': missing return type; assumed to be a member function returning 'int'
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(27,21): error C2955: 'TArrayTable': use of class template requires template argument list
+  (compiling source file 'Controller.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(8,7):
+      see declaration of 'TArrayTable'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(27,21): error C2509: 'size': member function not declared in 'TArrayTable'
+  (compiling source file 'Controller.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(8,7):
+      see declaration of 'TArrayTable'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(32,7): error C2143: syntax error: missing ';' before '&'
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(32,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(32,22): error C2955: 'TArrayTable': use of class template requires template argument list
+  (compiling source file 'Controller.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(8,7):
+      see declaration of 'TArrayTable'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(32,22): error C2761: 'TValue &TArrayTable<TKey,TValue>::operator [](size_t)': redeclaration of member is not allowed
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(33,1): error C2059: syntax error: '{'
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(33,1): error C2143: syntax error: missing ';' before '{'
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(33,1): error C2447: '{': missing function header (old-style formal list?)
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(37,19): error C2955: 'TArrayTable': use of class template requires template argument list
+  (compiling source file 'Controller.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(8,7):
+      see declaration of 'TArrayTable'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(37,19): error C2761: 'void TArrayTable<TKey,TValue>::Delete(TKey)': redeclaration of member is not allowed
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(37,26): error C2065: 'TKey': undeclared identifier
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(37,31): error C2146: syntax error: missing ')' before identifier 'key'
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(38,1): error C2143: syntax error: missing ';' before '{'
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(38,1): error C2447: '{': missing function header (old-style formal list?)
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(50,7): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(50,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(50,1): error C2086: 'int TValue': redefinition
+  (compiling source file 'Controller.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(32,1):
+      see declaration of 'TValue'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(50,22): error C2955: 'TArrayTable': use of class template requires template argument list
+  (compiling source file 'Controller.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(8,7):
+      see declaration of 'TArrayTable'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(50,22): error C2761: 'TValue *TArrayTable<TKey,TValue>::Find(TKey)': redeclaration of member is not allowed
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(50,27): error C2065: 'TKey': undeclared identifier
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(50,32): error C2146: syntax error: missing ')' before identifier 'key'
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(51,1): error C2143: syntax error: missing ';' before '{'
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(51,1): error C2447: '{': missing function header (old-style formal list?)
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(60,19): error C2955: 'TArrayTable': use of class template requires template argument list
+  (compiling source file 'Controller.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(8,7):
+      see declaration of 'TArrayTable'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(60,19): error C2761: 'void TArrayTable<TKey,TValue>::Insert(TKey,TValue)': redeclaration of member is not allowed
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(60,26): error C2065: 'TKey': undeclared identifier
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(60,31): error C2146: syntax error: missing ')' before identifier 'key'
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(61,1): error C2143: syntax error: missing ';' before '{'
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(61,1): error C2447: '{': missing function header (old-style formal list?)
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(67,20): error C2065: 'TKey': undeclared identifier
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(67,8): error C2923: 'TArrayTable': 'TKey' is not a valid template type argument for parameter 'TKey'
+  (compiling source file 'Controller.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(67,20):
+      see declaration of 'TKey'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(67,8): error C2923: 'TArrayTable': 'TValue' is not a valid template type argument for parameter 'TValue'
+  (compiling source file 'Controller.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(32,1):
+      see declaration of 'TValue'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(67,35): error C2955: 'TArrayTable': use of class template requires template argument list
+  (compiling source file 'Controller.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(8,7):
+      see declaration of 'TArrayTable'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(67,35): error C2509: 'GetName': member function not declared in 'TArrayTable'
+  (compiling source file 'Controller.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(8,7):
+      see declaration of 'TArrayTable'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(72,18): error C2065: 'TKey': undeclared identifier
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(72,6): error C2923: 'TArrayTable': 'TKey' is not a valid template type argument for parameter 'TKey'
+  (compiling source file 'Controller.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(72,18):
+      see declaration of 'TKey'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(72,6): error C2923: 'TArrayTable': 'TValue' is not a valid template type argument for parameter 'TValue'
+  (compiling source file 'Controller.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(32,1):
+      see declaration of 'TValue'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(72,33): error C2955: 'TArrayTable': use of class template requires template argument list
+  (compiling source file 'Controller.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(8,7):
+      see declaration of 'TArrayTable'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(72,33): error C2509: 'Print': member function not declared in 'TArrayTable'
+  (compiling source file 'Controller.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(8,7):
+      see declaration of 'TArrayTable'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\THashTableChain.h(74,10): error C2039: 'cout': is not a member of 'std'
+  (compiling source file 'Controller.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\list(23,1):
+      see declaration of 'std'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\THashTableChain.h(77,14): error C2039: 'cout': is not a member of 'std'
+  (compiling source file 'Controller.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\list(23,1):
+      see declaration of 'std'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\THashTableChain.h(80,18): error C2039: 'cout': is not a member of 'std'
+  (compiling source file 'Controller.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\list(23,1):
+      see declaration of 'std'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\THashTableChain.h(82,14): error C2039: 'cout': is not a member of 'std'
+  (compiling source file 'Controller.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\list(23,1):
+      see declaration of 'std'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\THashTableChain.h(86,14): error C2039: 'cout': is not a member of 'std'
+  (compiling source file 'Controller.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\list(23,1):
+      see declaration of 'std'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\THashTableOpen.h(93,8): error C2270: 'GetName': modifiers not allowed on nonmember functions
+  (compiling source file 'Controller.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\THashTableOpen.h(93,8): error C3158: 'GetName': 'override' can only be applied to a virtual member function
+  (compiling source file 'Controller.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\optional(11): warning STL4038: The contents of <optional> are available only with C++17 or later.
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(5,13): error C2084: function 'Controller::Controller(void)' already has a body
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.h(22,2):
+      see previous definition of 'Controller::Controller'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(8,34): error C2514: 'TArrayTable': class template cannot be constructed
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(8,7):
+      see declaration of 'TArrayTable'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(9,33): error C2514: 'TListTable': class template cannot be constructed
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TListTable.h(9,7):
+      see declaration of 'TListTable'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(10,40): error C2514: 'TSortedArrayTable': class template cannot be constructed
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TSortedArrayTable.h(9,7):
+      see declaration of 'TSortedArrayTable'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(11,33): error C2514: 'TTreeTable': class template cannot be constructed
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTreeTable.h(8,7):
+      see declaration of 'TTreeTable'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(12,37): error C2514: 'THashTableOpen': class template cannot be constructed
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\THashTableOpen.h(10,7):
+      see declaration of 'THashTableOpen'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(13,38): error C2514: 'THashTableChain': class template cannot be constructed
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\THashTableChain.h(9,7):
+      see declaration of 'THashTableChain'
+  
 C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(20,14): error C2061: syntax error: identifier '{ctor}'
 C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(21,1): error C2143: syntax error: missing ';' before '{'
 C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(21,1): error C2447: '{': missing function header (old-style formal list?)
 C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(28,28): error C2065: 'tables': undeclared identifier
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(30,3): error C2065: 'active_table': undeclared identifier
 C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(30,18): error C2065: 'tables': undeclared identifier
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(31,38): error C2065: 'active_table': undeclared identifier
 C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(39,20): error C2065: 'tables': undeclared identifier
 C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(39,12): error C3531: 'table': a symbol whose type contains 'auto' must have an initializer
 C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(39,18): error C2143: syntax error: missing ';' before ':'
@@ -21,4 +237,678 @@ C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(46,20)
 C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(46,12): error C3531: 'table': a symbol whose type contains 'auto' must have an initializer
 C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(46,18): error C2143: syntax error: missing ';' before ':'
 C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(46,26): error C2143: syntax error: missing ';' before ')'
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(56,27): error C2660: 'TPostfix::Calculate': function does not take 3 arguments
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.h(32,10):
+      see declaration of 'TPostfix::Calculate'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(56,27):
+      while trying to match the argument list '(double, double, double)'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(56,17): error C2440: 'initializing': cannot convert from 'Polinom' to 'double'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(56,17):
+      No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+  
 C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(67,6): error C2270: 'PrintActiveTable': modifiers not allowed on nonmember functions
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(69,6): error C2065: 'active_table': undeclared identifier
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(71,31): error C2065: 'active_table': undeclared identifier
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(72,3): error C2065: 'active_table': undeclared identifier
+  main.cpp
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(17,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'main.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(17,2):
+      the template instantiation context (the oldest one first) is
+          C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(8,7):
+          while compiling class template 'TArrayTable'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(17,17): error C2610: 'int TArrayTable<TKey,TValue>::TArryTable(void)': is not a special member function or comparison operator which can be defaulted
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(17,2): warning C4183: 'TArryTable': missing return type; assumed to be a member function returning 'int'
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(27,21): error C2955: 'TArrayTable': use of class template requires template argument list
+  (compiling source file 'main.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(8,7):
+      see declaration of 'TArrayTable'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(27,21): error C2509: 'size': member function not declared in 'TArrayTable'
+  (compiling source file 'main.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(8,7):
+      see declaration of 'TArrayTable'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(32,7): error C2143: syntax error: missing ';' before '&'
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(32,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(32,22): error C2955: 'TArrayTable': use of class template requires template argument list
+  (compiling source file 'main.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(8,7):
+      see declaration of 'TArrayTable'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(32,22): error C2761: 'TValue &TArrayTable<TKey,TValue>::operator [](size_t)': redeclaration of member is not allowed
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(33,1): error C2059: syntax error: '{'
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(33,1): error C2143: syntax error: missing ';' before '{'
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(33,1): error C2447: '{': missing function header (old-style formal list?)
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(37,19): error C2955: 'TArrayTable': use of class template requires template argument list
+  (compiling source file 'main.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(8,7):
+      see declaration of 'TArrayTable'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(37,19): error C2761: 'void TArrayTable<TKey,TValue>::Delete(TKey)': redeclaration of member is not allowed
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(37,26): error C2065: 'TKey': undeclared identifier
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(37,31): error C2146: syntax error: missing ')' before identifier 'key'
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(38,1): error C2143: syntax error: missing ';' before '{'
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(38,1): error C2447: '{': missing function header (old-style formal list?)
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(50,7): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(50,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(50,1): error C2086: 'int TValue': redefinition
+  (compiling source file 'main.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(32,1):
+      see declaration of 'TValue'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(50,22): error C2955: 'TArrayTable': use of class template requires template argument list
+  (compiling source file 'main.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(8,7):
+      see declaration of 'TArrayTable'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(50,22): error C2761: 'TValue *TArrayTable<TKey,TValue>::Find(TKey)': redeclaration of member is not allowed
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(50,27): error C2065: 'TKey': undeclared identifier
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(50,32): error C2146: syntax error: missing ')' before identifier 'key'
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(51,1): error C2143: syntax error: missing ';' before '{'
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(51,1): error C2447: '{': missing function header (old-style formal list?)
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(60,19): error C2955: 'TArrayTable': use of class template requires template argument list
+  (compiling source file 'main.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(8,7):
+      see declaration of 'TArrayTable'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(60,19): error C2761: 'void TArrayTable<TKey,TValue>::Insert(TKey,TValue)': redeclaration of member is not allowed
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(60,26): error C2065: 'TKey': undeclared identifier
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(60,31): error C2146: syntax error: missing ')' before identifier 'key'
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(61,1): error C2143: syntax error: missing ';' before '{'
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(61,1): error C2447: '{': missing function header (old-style formal list?)
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(67,20): error C2065: 'TKey': undeclared identifier
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(67,8): error C2923: 'TArrayTable': 'TKey' is not a valid template type argument for parameter 'TKey'
+  (compiling source file 'main.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(67,20):
+      see declaration of 'TKey'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(67,8): error C2923: 'TArrayTable': 'TValue' is not a valid template type argument for parameter 'TValue'
+  (compiling source file 'main.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(32,1):
+      see declaration of 'TValue'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(67,35): error C2955: 'TArrayTable': use of class template requires template argument list
+  (compiling source file 'main.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(8,7):
+      see declaration of 'TArrayTable'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(67,35): error C2509: 'GetName': member function not declared in 'TArrayTable'
+  (compiling source file 'main.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(8,7):
+      see declaration of 'TArrayTable'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(72,18): error C2065: 'TKey': undeclared identifier
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(72,6): error C2923: 'TArrayTable': 'TKey' is not a valid template type argument for parameter 'TKey'
+  (compiling source file 'main.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(72,18):
+      see declaration of 'TKey'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(72,6): error C2923: 'TArrayTable': 'TValue' is not a valid template type argument for parameter 'TValue'
+  (compiling source file 'main.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(32,1):
+      see declaration of 'TValue'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(72,33): error C2955: 'TArrayTable': use of class template requires template argument list
+  (compiling source file 'main.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(8,7):
+      see declaration of 'TArrayTable'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(72,33): error C2509: 'Print': member function not declared in 'TArrayTable'
+  (compiling source file 'main.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(8,7):
+      see declaration of 'TArrayTable'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\optional(11): warning STL4038: The contents of <optional> are available only with C++17 or later.
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\THashTableOpen.h(93,8): error C2270: 'GetName': modifiers not allowed on nonmember functions
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\THashTableOpen.h(93,8): error C3158: 'GetName': 'override' can only be applied to a virtual member function
+  (compiling source file 'main.cpp')
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(9,13): warning C4566: character represented by universal-character-name '\u0413' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(9,13): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(9,13): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(9,13): warning C4566: character represented by universal-character-name '\u0432' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(9,13): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(9,13): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(9,13): warning C4566: character represented by universal-character-name '\u0435' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(9,13): warning C4566: character represented by universal-character-name '\u043C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(9,13): warning C4566: character represented by universal-character-name '\u044E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(10,13): warning C4566: character represented by universal-character-name '\u0412' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(10,13): warning C4566: character represented by universal-character-name '\u044B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(10,13): warning C4566: character represented by universal-character-name '\u0431' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(10,13): warning C4566: character represented by universal-character-name '\u0440' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(10,13): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(10,13): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(10,13): warning C4566: character represented by universal-character-name '\u044C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(10,13): warning C4566: character represented by universal-character-name '\u043A' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(10,13): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(10,13): warning C4566: character represented by universal-character-name '\u0432' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(10,13): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(10,13): warning C4566: character represented by universal-character-name '\u0443' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(10,13): warning C4566: character represented by universal-character-name '\u044E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(10,13): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(10,13): warning C4566: character represented by universal-character-name '\u0446' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(11,13): warning C4566: character represented by universal-character-name '\u0412' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(11,13): warning C4566: character represented by universal-character-name '\u044B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(11,13): warning C4566: character represented by universal-character-name '\u0432' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(11,13): warning C4566: character represented by universal-character-name '\u0435' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(11,13): warning C4566: character represented by universal-character-name '\u0441' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(11,13): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(11,13): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(11,13): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(11,13): warning C4566: character represented by universal-character-name '\u043A' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(11,13): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(11,13): warning C4566: character represented by universal-character-name '\u0443' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(11,13): warning C4566: character represented by universal-character-name '\u044E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(11,13): warning C4566: character represented by universal-character-name '\u0431' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(11,13): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(11,13): warning C4566: character represented by universal-character-name '\u0446' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(12,13): warning C4566: character represented by universal-character-name '\u0414' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(12,13): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(12,13): warning C4566: character represented by universal-character-name '\u0431' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(12,13): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(12,13): warning C4566: character represented by universal-character-name '\u0432' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(12,13): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(12,13): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(12,13): warning C4566: character represented by universal-character-name '\u044C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(12,13): warning C4566: character represented by universal-character-name '\u043F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(12,13): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(12,13): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(12,13): warning C4566: character represented by universal-character-name '\u043C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(13,13): warning C4566: character represented by universal-character-name '\u0423' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(13,13): warning C4566: character represented by universal-character-name '\u0434' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(13,13): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(13,13): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(13,13): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(13,13): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(13,13): warning C4566: character represented by universal-character-name '\u044C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(13,13): warning C4566: character represented by universal-character-name '\u043F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(13,13): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(13,13): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(13,13): warning C4566: character represented by universal-character-name '\u043C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(14,13): warning C4566: character represented by universal-character-name '\u0412' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(14,13): warning C4566: character represented by universal-character-name '\u044B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(14,13): warning C4566: character represented by universal-character-name '\u043F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(14,13): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(14,13): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(14,13): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(14,13): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(14,13): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(14,13): warning C4566: character represented by universal-character-name '\u044C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(14,13): warning C4566: character represented by universal-character-name '\u0435' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(14,13): warning C4566: character represented by universal-character-name '\u0440' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(14,13): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(14,13): warning C4566: character represented by universal-character-name '\u0446' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(14,13): warning C4566: character represented by universal-character-name '\u044E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(14,13): warning C4566: character represented by universal-character-name '\u0441' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(14,13): warning C4566: character represented by universal-character-name '\u043C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(15,13): warning C4566: character represented by universal-character-name '\u0412' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(15,13): warning C4566: character represented by universal-character-name '\u0437' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(15,13): warning C4566: character represented by universal-character-name '\u044F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(15,13): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(15,13): warning C4566: character represented by universal-character-name '\u044C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(15,13): warning C4566: character represented by universal-character-name '\u043F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(15,13): warning C4566: character represented by universal-character-name '\u0440' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(15,13): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(15,13): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(15,13): warning C4566: character represented by universal-character-name '\u0432' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(15,13): warning C4566: character represented by universal-character-name '\u0434' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(15,13): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(15,13): warning C4566: character represented by universal-character-name '\u0443' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(15,13): warning C4566: character represented by universal-character-name '\u044E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(15,13): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(15,13): warning C4566: character represented by universal-character-name '\u043C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(15,13): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(16,13): warning C4566: character represented by universal-character-name '\u0412' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(16,13): warning C4566: character represented by universal-character-name '\u044B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(16,13): warning C4566: character represented by universal-character-name '\u0447' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(16,13): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(16,13): warning C4566: character represented by universal-character-name '\u0441' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(16,13): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(16,13): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(16,13): warning C4566: character represented by universal-character-name '\u044C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(16,13): warning C4566: character represented by universal-character-name '\u0437' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(16,13): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(16,13): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(16,13): warning C4566: character represented by universal-character-name '\u0435' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(16,13): warning C4566: character represented by universal-character-name '\u043F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(16,13): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(16,13): warning C4566: character represented by universal-character-name '\u043C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(16,13): warning C4566: character represented by universal-character-name '\u0432' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(16,13): warning C4566: character represented by universal-character-name '\u043A' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(17,13): warning C4566: character represented by universal-character-name '\u0417' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(17,13): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(17,13): warning C4566: character represented by universal-character-name '\u0432' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(17,13): warning C4566: character represented by universal-character-name '\u0435' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(17,13): warning C4566: character represented by universal-character-name '\u0440' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(17,13): warning C4566: character represented by universal-character-name '\u0448' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(17,13): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(17,13): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(17,13): warning C4566: character represented by universal-character-name '\u044C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(17,13): warning C4566: character represented by universal-character-name '\u043F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(17,13): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(17,13): warning C4566: character represented by universal-character-name '\u0433' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(17,13): warning C4566: character represented by universal-character-name '\u043C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(17,13): warning C4566: character represented by universal-character-name '\u0443' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(19,13): warning C4566: character represented by universal-character-name '\u0412' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(19,13): warning C4566: character represented by universal-character-name '\u0432' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(19,13): warning C4566: character represented by universal-character-name '\u0435' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(19,13): warning C4566: character represented by universal-character-name '\u0434' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(19,13): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(19,13): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(19,13): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(19,13): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(19,13): warning C4566: character represented by universal-character-name '\u043C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(19,13): warning C4566: character represented by universal-character-name '\u0440' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(19,13): warning C4566: character represented by universal-character-name '\u043F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(19,13): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(19,13): warning C4566: character represented by universal-character-name '\u0446' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(34,25): warning C4566: character represented by universal-character-name '\u0412' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(34,25): warning C4566: character represented by universal-character-name '\u0432' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(34,25): warning C4566: character represented by universal-character-name '\u0435' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(34,25): warning C4566: character represented by universal-character-name '\u0434' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(34,25): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(34,25): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(34,25): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(34,25): warning C4566: character represented by universal-character-name '\u043A' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(34,25): warning C4566: character represented by universal-character-name '\u0441' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(34,25): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(34,25): warning C4566: character represented by universal-character-name '\u0431' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(34,25): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(34,25): warning C4566: character represented by universal-character-name '\u0446' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(34,25): warning C4566: character represented by universal-character-name '\u044B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(34,25): warning C4566: character represented by universal-character-name '\u043C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(34,25): warning C4566: character represented by universal-character-name '\u043F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(34,25): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(34,25): warning C4566: character represented by universal-character-name '\u0440' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(34,25): warning C4566: character represented by universal-character-name '\u0439' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(34,25): warning C4566: character represented by universal-character-name '\u0445' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(34,25): warning C4566: character represented by universal-character-name '\u0448' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(34,25): warning C4566: character represented by universal-character-name '\u044F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(34,25): warning C4566: character represented by universal-character-name '\u0447' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(44,25): warning C4566: character represented by universal-character-name '\u0412' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(44,25): warning C4566: character represented by universal-character-name '\u0432' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(44,25): warning C4566: character represented by universal-character-name '\u0435' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(44,25): warning C4566: character represented by universal-character-name '\u0434' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(44,25): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(44,25): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(44,25): warning C4566: character represented by universal-character-name '\u043A' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(44,25): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(44,25): warning C4566: character represented by universal-character-name '\u044E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(44,25): warning C4566: character represented by universal-character-name '\u0447' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(44,25): warning C4566: character represented by universal-character-name '\u043C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(44,25): warning C4566: character represented by universal-character-name '\u044F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(44,25): warning C4566: character represented by universal-character-name '\u043F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(44,25): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(44,25): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(44,25): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(48,25): warning C4566: character represented by universal-character-name '\u0412' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(48,25): warning C4566: character represented by universal-character-name '\u0432' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(48,25): warning C4566: character represented by universal-character-name '\u0435' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(48,25): warning C4566: character represented by universal-character-name '\u0434' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(48,25): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(48,25): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(48,25): warning C4566: character represented by universal-character-name '\u043F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(48,25): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(48,25): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(48,25): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(48,25): warning C4566: character represented by universal-character-name '\u043C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(48,25): warning C4566: character represented by universal-character-name '\u0441' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(48,25): warning C4566: character represented by universal-character-name '\u044C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(48,25): warning C4566: character represented by universal-character-name '\u0437' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(48,25): warning C4566: character represented by universal-character-name '\u0443' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(48,25): warning C4566: character represented by universal-character-name '\u0439' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(48,25): warning C4566: character represented by universal-character-name '\u0440' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(48,25): warning C4566: character represented by universal-character-name '\u044B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(52,27): error C2248: 'Controller::active_table': cannot access private member declared in class 'Controller'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.h(20,10):
+      see declaration of 'Controller::active_table'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.h(17,7):
+      see declaration of 'Controller'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(53,25): warning C4566: character represented by universal-character-name '\u041F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(53,25): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(53,25): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(53,25): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(53,25): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(53,25): warning C4566: character represented by universal-character-name '\u043C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(53,25): warning C4566: character represented by universal-character-name '\u0434' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(53,25): warning C4566: character represented by universal-character-name '\u0431' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(53,25): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(53,25): warning C4566: character represented by universal-character-name '\u0432' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(53,25): warning C4566: character represented by universal-character-name '\u0435' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(53,25): warning C4566: character represented by universal-character-name '\u043A' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(53,25): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(53,25): warning C4566: character represented by universal-character-name '\u0443' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(53,25): warning C4566: character represented by universal-character-name '\u044E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(53,25): warning C4566: character represented by universal-character-name '\u0446' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(57,25): warning C4566: character represented by universal-character-name '\u0412' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(57,25): warning C4566: character represented by universal-character-name '\u0432' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(57,25): warning C4566: character represented by universal-character-name '\u0435' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(57,25): warning C4566: character represented by universal-character-name '\u0434' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(57,25): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(57,25): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(57,25): warning C4566: character represented by universal-character-name '\u043A' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(57,25): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(57,25): warning C4566: character represented by universal-character-name '\u044E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(57,25): warning C4566: character represented by universal-character-name '\u0447' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(57,25): warning C4566: character represented by universal-character-name '\u043F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(57,25): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(57,25): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(57,25): warning C4566: character represented by universal-character-name '\u043C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(57,25): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(57,25): warning C4566: character represented by universal-character-name '\u044F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(57,25): warning C4566: character represented by universal-character-name '\u0443' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(59,27): error C2248: 'Controller::active_table': cannot access private member declared in class 'Controller'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.h(20,10):
+      see declaration of 'Controller::active_table'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.h(17,7):
+      see declaration of 'Controller'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(60,25): warning C4566: character represented by universal-character-name '\u041F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(60,25): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(60,25): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(60,25): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(60,25): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(60,25): warning C4566: character represented by universal-character-name '\u043C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(60,25): warning C4566: character represented by universal-character-name '\u0443' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(60,25): warning C4566: character represented by universal-character-name '\u0434' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(60,25): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(60,25): warning C4566: character represented by universal-character-name '\u0435' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(60,25): warning C4566: character represented by universal-character-name '\u0437' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(60,25): warning C4566: character represented by universal-character-name '\u043A' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(60,25): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(60,25): warning C4566: character represented by universal-character-name '\u0432' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(60,25): warning C4566: character represented by universal-character-name '\u0439' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(60,25): warning C4566: character represented by universal-character-name '\u0431' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(60,25): warning C4566: character represented by universal-character-name '\u0446' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(60,25): warning C4566: character represented by universal-character-name '\u044B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(60,25): warning C4566: character represented by universal-character-name '\u0441' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(60,25): warning C4566: character represented by universal-character-name '\u0449' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(64,25): warning C4566: character represented by universal-character-name '\u0412' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(64,25): warning C4566: character represented by universal-character-name '\u0432' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(64,25): warning C4566: character represented by universal-character-name '\u0435' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(64,25): warning C4566: character represented by universal-character-name '\u0434' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(64,25): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(64,25): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(64,25): warning C4566: character represented by universal-character-name '\u044B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(64,25): warning C4566: character represented by universal-character-name '\u0440' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(64,25): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(64,25): warning C4566: character represented by universal-character-name '\u0436' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(64,25): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(64,25): warning C4566: character represented by universal-character-name '\u0441' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(64,25): warning C4566: character represented by universal-character-name '\u043F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(64,25): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(64,25): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(64,25): warning C4566: character represented by universal-character-name '\u044C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(64,25): warning C4566: character represented by universal-character-name '\u0437' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(64,25): warning C4566: character represented by universal-character-name '\u043C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(64,25): warning C4566: character represented by universal-character-name '\u043A' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(64,25): warning C4566: character represented by universal-character-name '\u044E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(64,25): warning C4566: character represented by universal-character-name '\u0447' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(64,25): warning C4566: character represented by universal-character-name '\u0439' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(64,25): warning C4566: character represented by universal-character-name '\u0446' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(66,25): warning C4566: character represented by universal-character-name '\u0412' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(66,25): warning C4566: character represented by universal-character-name '\u0432' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(66,25): warning C4566: character represented by universal-character-name '\u0435' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(66,25): warning C4566: character represented by universal-character-name '\u0434' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(66,25): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(66,25): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(66,25): warning C4566: character represented by universal-character-name '\u0437' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(66,25): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(66,25): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(66,25): warning C4566: character represented by universal-character-name '\u0447' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(66,25): warning C4566: character represented by universal-character-name '\u044F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(66,25): warning C4566: character represented by universal-character-name '\u043F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(66,25): warning C4566: character represented by universal-character-name '\u0440' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(66,25): warning C4566: character represented by universal-character-name '\u043C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(66,25): warning C4566: character represented by universal-character-name '\u044B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(66,25): warning C4566: character represented by universal-character-name '\u0445' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(66,25): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(66,25): warning C4566: character represented by universal-character-name '\u0431' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(66,25): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(69,31): error C2440: 'initializing': cannot convert from 'Polinom' to 'double'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(69,31):
+      No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(70,25): warning C4566: character represented by universal-character-name '\u0420' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(70,25): warning C4566: character represented by universal-character-name '\u0435' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(70,25): warning C4566: character represented by universal-character-name '\u0437' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(70,25): warning C4566: character represented by universal-character-name '\u0443' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(70,25): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(70,25): warning C4566: character represented by universal-character-name '\u044C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(70,25): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(70,25): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(76,25): warning C4566: character represented by universal-character-name '\u0412' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(76,25): warning C4566: character represented by universal-character-name '\u0432' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(76,25): warning C4566: character represented by universal-character-name '\u0435' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(76,25): warning C4566: character represented by universal-character-name '\u0434' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(76,25): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(76,25): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(76,25): warning C4566: character represented by universal-character-name '\u043A' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(76,25): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(76,25): warning C4566: character represented by universal-character-name '\u044E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(76,25): warning C4566: character represented by universal-character-name '\u0447' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(76,25): warning C4566: character represented by universal-character-name '\u043F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(76,25): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(76,25): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(76,25): warning C4566: character represented by universal-character-name '\u043C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(76,25): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(78,25): warning C4566: character represented by universal-character-name '\u0412' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(78,25): warning C4566: character represented by universal-character-name '\u0432' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(78,25): warning C4566: character represented by universal-character-name '\u0435' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(78,25): warning C4566: character represented by universal-character-name '\u0434' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(78,25): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(78,25): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(78,25): warning C4566: character represented by universal-character-name '\u043F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(78,25): warning C4566: character represented by universal-character-name '\u0440' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(78,25): warning C4566: character represented by universal-character-name '\u043C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(78,25): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(78,25): warning C4566: character represented by universal-character-name '\u0443' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(78,25): warning C4566: character represented by universal-character-name '\u044E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(78,25): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(78,25): warning C4566: character represented by universal-character-name '\u044F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(78,25): warning C4566: character represented by universal-character-name '\u0444' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(78,25): warning C4566: character represented by universal-character-name '\u0446' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(78,25): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(78,25): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(80,41): error C2248: 'Controller::active_table': cannot access private member declared in class 'Controller'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.h(20,10):
+      see declaration of 'Controller::active_table'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.h(17,7):
+      see declaration of 'Controller'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(80,56): error C2039: 'Get': is not a member of 'TTable'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(9,7):
+      see declaration of 'TTable'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(82,25): warning C4566: character represented by universal-character-name '\u041F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(82,25): warning C4566: character represented by universal-character-name '\u0440' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(82,25): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(82,25): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(82,25): warning C4566: character represented by universal-character-name '\u0437' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(82,25): warning C4566: character represented by universal-character-name '\u0432' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(82,25): warning C4566: character represented by universal-character-name '\u0434' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(82,25): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(82,25): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(82,25): warning C4566: character represented by universal-character-name '\u044F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(86,25): warning C4566: character represented by universal-character-name '\u0412' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(86,25): warning C4566: character represented by universal-character-name '\u0432' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(86,25): warning C4566: character represented by universal-character-name '\u0435' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(86,25): warning C4566: character represented by universal-character-name '\u0434' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(86,25): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(86,25): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(86,25): warning C4566: character represented by universal-character-name '\u043A' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(86,25): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(86,25): warning C4566: character represented by universal-character-name '\u044E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(86,25): warning C4566: character represented by universal-character-name '\u0447' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(86,25): warning C4566: character represented by universal-character-name '\u043F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(86,25): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(86,25): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(86,25): warning C4566: character represented by universal-character-name '\u043C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(86,25): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(89,25): warning C4566: character represented by universal-character-name '\u0412' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(89,25): warning C4566: character represented by universal-character-name '\u0432' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(89,25): warning C4566: character represented by universal-character-name '\u0435' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(89,25): warning C4566: character represented by universal-character-name '\u0434' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(89,25): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(89,25): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(89,25): warning C4566: character represented by universal-character-name '\u0437' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(89,25): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(89,25): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(89,25): warning C4566: character represented by universal-character-name '\u0447' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(89,25): warning C4566: character represented by universal-character-name '\u044F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(89,25): warning C4566: character represented by universal-character-name '\u043F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(89,25): warning C4566: character represented by universal-character-name '\u0440' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(89,25): warning C4566: character represented by universal-character-name '\u043C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(89,25): warning C4566: character represented by universal-character-name '\u044B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(89,25): warning C4566: character represented by universal-character-name '\u0445' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(89,25): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(89,25): warning C4566: character represented by universal-character-name '\u0431' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(89,25): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(91,41): error C2248: 'Controller::active_table': cannot access private member declared in class 'Controller'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.h(20,10):
+      see declaration of 'Controller::active_table'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.h(17,7):
+      see declaration of 'Controller'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(91,56): error C2039: 'Get': is not a member of 'TTable'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(9,7):
+      see declaration of 'TTable'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(93,25): warning C4566: character represented by universal-character-name '\u0420' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(93,25): warning C4566: character represented by universal-character-name '\u0435' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(93,25): warning C4566: character represented by universal-character-name '\u0437' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(93,25): warning C4566: character represented by universal-character-name '\u0443' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(93,25): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(93,25): warning C4566: character represented by universal-character-name '\u044C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(93,25): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(93,25): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(96,25): warning C4566: character represented by universal-character-name '\u0417' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(96,25): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(96,25): warning C4566: character represented by universal-character-name '\u0432' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(96,25): warning C4566: character represented by universal-character-name '\u0435' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(96,25): warning C4566: character represented by universal-character-name '\u0440' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(96,25): warning C4566: character represented by universal-character-name '\u0448' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(96,25): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(96,25): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(96,25): warning C4566: character represented by universal-character-name '\u0431' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(96,25): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(96,25): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(96,25): warning C4566: character represented by universal-character-name '\u044B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(96,25): warning C4566: character represented by universal-character-name '\u043F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(96,25): warning C4566: character represented by universal-character-name '\u0433' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(96,25): warning C4566: character represented by universal-character-name '\u043C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(100,25): warning C4566: character represented by universal-character-name '\u041D' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(100,25): warning C4566: character represented by universal-character-name '\u0435' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(100,25): warning C4566: character represented by universal-character-name '\u0432' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(100,25): warning C4566: character represented by universal-character-name '\u0440' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(100,25): warning C4566: character represented by universal-character-name '\u043D' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(100,25): warning C4566: character represented by universal-character-name '\u044B' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(100,25): warning C4566: character represented by universal-character-name '\u0439' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(100,25): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(100,25): warning C4566: character represented by universal-character-name '\u043C' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(100,25): warning C4566: character represented by universal-character-name '\u043A' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(100,25): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(100,25): warning C4566: character represented by universal-character-name '\u0434' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(100,25): warning C4566: character represented by universal-character-name '\u041F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(100,25): warning C4566: character represented by universal-character-name '\u043F' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(100,25): warning C4566: character represented by universal-character-name '\u0431' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(100,25): warning C4566: character represented by universal-character-name '\u0443' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(100,25): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(100,25): warning C4566: character represented by universal-character-name '\u0441' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(104,21): warning C4566: character represented by universal-character-name '\u041E' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(104,21): warning C4566: character represented by universal-character-name '\u0448' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(104,21): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(104,21): warning C4566: character represented by universal-character-name '\u0431' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(104,21): warning C4566: character represented by universal-character-name '\u043A' cannot be represented in the current code page (1252)
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(104,21): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+  postfix.cpp
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(14,8): error C2270: 'GetInfix': modifiers not allowed on nonmember functions
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(16,9): error C2065: 'infix': undeclared identifier
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(19,8): error C2270: 'GetPostfix': modifiers not allowed on nonmember functions
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(21,9): error C2065: 'postfix': undeclared identifier
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(24,16): error C2270: 'GetOperands': modifiers not allowed on nonmember functions
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(27,26): error C2065: 'operands': undeclared identifier
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(27,19): error C2530: 'item': references must be initialized
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(27,19): error C3531: 'item': a symbol whose type contains 'auto' must have an initializer
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(27,24): error C2143: syntax error: missing ';' before ':'
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(27,34): error C2143: syntax error: missing ';' before ')'
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(35,16): error C2065: 'infix': undeclared identifier
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(35,14): error C2143: syntax error: missing ';' before ':'
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(35,21): error C2143: syntax error: missing ';' before ')'
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(43,5): error C2065: 'lexems': undeclared identifier
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(47,5): error C2065: 'lexems': undeclared identifier
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(51,3): error C2065: 'lexems': undeclared identifier
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(59,28): error C2065: 'lexems': undeclared identifier
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(59,21): error C2530: 'elem': references must be initialized
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(59,26): error C2143: syntax error: missing ';' before ':'
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(59,34): error C2143: syntax error: missing ';' before ')'
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(68,5): error C2065: 'postfix': undeclared identifier
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(72,12): error C2065: 'priority': undeclared identifier
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(72,38): error C2065: 'priority': undeclared identifier
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(77,9): error C2065: 'priority': undeclared identifier
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(77,30): error C2065: 'priority': undeclared identifier
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(78,6): error C2065: 'postfix': undeclared identifier
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(89,4): error C2065: 'postfix': undeclared identifier
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(90,4): error C2065: 'operands': undeclared identifier
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\postfix.cpp(96,3): error C2065: 'postfix': undeclared identifier
+  Generating Code...

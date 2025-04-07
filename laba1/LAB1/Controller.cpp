@@ -2,7 +2,7 @@
 
 using namespace std;
 
-Controller() : active_table(nullptr)
+Controller::Controller()
 {
 	// инициализация всех таблиц
 	tables.push_back(new TArrayTable());

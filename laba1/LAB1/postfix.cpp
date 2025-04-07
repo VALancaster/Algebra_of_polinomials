@@ -2,7 +2,7 @@
 #include "stack.h"
 #include <sstream>
 
-map<char, int> TPostfix::priority = { {'+', 1}, {'-', 1}, {'*', 2}, {'/', 2} };
+map<char, int> TPostfix::priority = {{'(', 0}, {')', 0}, {'+', 1}, {'-', 1}, {'*', 2}};
 
 TPostfix::TPostfix(string infx) : infix(infx) 
 {
@@ -11,17 +11,17 @@ TPostfix::TPostfix(string infx) : infix(infx)
 	ToPostfix();
 }
 
-string TPostfix::GetInfix() const 
+string GetInfix() const 
 {
 	return infix;
 }
 
-string TPostfix::GetPostfix() const 
+string GetPostfix() const 
 {
 	return postfix;
 }
 
-vector<string> TPostfix::GetOperands() const // вернет вектор операндов (символов)
+vector<string> GetOperands() const // вернет вектор операндов (символов)
 { 
 	vector<string> oper;
 	for (const auto& item : operands) 
@@ -29,7 +29,7 @@ vector<string> TPostfix::GetOperands() const // вернет вектор опе
 	return oper;
 }
 
-void TPostfix::ParseInf() 
+void ParseInf() 
 {
 	string operand;
 	for (char c : infix) 
@@ -51,7 +51,7 @@ void TPostfix::ParseInf()
 		lexems.push_back(operand);
 }
 
-void TPostfix::ToPostfix() 
+void ToPostfix() 
 {
 	ParseInf();
 	TStack<string> s;
@@ -86,11 +86,8 @@ void TPostfix::ToPostfix()
 		}
 		else 
 		{
-			if (elem.find_first_not_of("0123456789.") == -1) // символ - число (включает цифры или точки)
-				operands[elem] = Monom(stod(elem), 0, 0, 0); // число как моном со степенями 0
-			else // Моном
-				operands[elem] = Monom(elem); // добавление монома в map как операнда
 			postfix += elem + " ";
+			operands[elem] = Polinom();
 		}
 	}
 	while (!s.IsEmpty()) 
@@ -100,10 +97,9 @@ void TPostfix::ToPostfix()
 	}
 }
 
-double TPostfix::Calculate(double x_val, double y_val, double z_val)
+Polinom TPostfix::Calculate(map<string, Polinom>& namedPolinoms)
 {
-	TStack<double> st;
-	double left, right;
+	TStack<Polinom> st;
 	istringstream iss(postfix);
 	string lexem;
 
@@ -111,22 +107,23 @@ double TPostfix::Calculate(double x_val, double y_val, double z_val)
 	{
 		if (lexem == "+") 
 		{
-			right = st.Pop();
-			left = st.Pop();
-			st.Push(left + right);
+			Polinom b = st.Pop();
+			Polinom a = st.Pop();
+			st.Push(a + b);
 		}
 		else if (lexem == "-") 
 		{
-			right = st.Pop();
-			left = st.Pop();
-			st.Push(left - right);
+			Polinom b = st.Pop();
+			Polinom a = st.Pop();
+			st.Push(a - b);
 		}
 		else if (lexem == "*") 
 		{
-			right = st.Pop();
-			left = st.Pop();
-			st.Push(left * right);
+			Polinom b = st.Pop();
+			Polinom a = st.Pop();
+			st.Push(a * b);
 		}
+		/*
 		else if (lexem == "/") 
 		{
 			right = st.Pop();
@@ -135,12 +132,12 @@ double TPostfix::Calculate(double x_val, double y_val, double z_val)
 				throw runtime_error("Division by zero");
 			st.Push(left / right);
 		}
+		*/
 		else 
 		{
-			if (operands.find(lexem) != operands.end())
-				st.Push(operands[lexem].evaluate(x_val, y_val, z_val));
-			else
-				st.Push(stod(lexem));
+			if (namedPolinoms.find(lexem) == namedPolinoms.end())
+				throw runtime_error("Operand '" + lexem + "' not defined");
+			st.Push(namedPolinoms[lexem]);
 		}
 	}
 	return st.Pop();

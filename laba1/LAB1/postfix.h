@@ -14,12 +14,12 @@
 
 using namespace std;
 
-class TPostfix 
+class TPostfix
 {
 	string infix;
 	string postfix;
 	vector<string> lexems; // и операнды, и операторы
-	map<string, Monom> operands; // операнды
+	map<string, Polinom> operands; // операнды
 	static map<char, int> priority;
 
 	void ParseInf();
@@ -29,8 +29,7 @@ public:
 	string GetInfix() const;
 	string GetPostfix() const;
 	vector<string> GetOperands() const;
-	double Calculate(double first_val, double second_val, double third_val); // так как не требуется map, поскольку всегда 3 переменных
+	Polinom Calculate(map<string, Polinom>& namedPolinoms);
 };
-
 #endif
 
