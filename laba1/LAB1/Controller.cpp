@@ -74,3 +74,25 @@ void PrintActiveTable() const
 	else
 		cout << "No active table selected." << endl;
 }
+
+Polinom* Controller::FindPolinomInActiveTable(const std::string& name) 
+{
+	if (!active_table)
+		return nullptr;
+	return active_table->Find(name);
+}
+
+Polinom EvaluatePolinomExpression(const string& name, const string& expression)
+{
+	TPostfix postfix(expression);
+	vector<string> operand_names = postfix.GetOperands(); // получаем список операндов (имена полиномов)
+	map<string, Polinom> namedPolinoms; // создаём временную map<string, Polinom> и заполняем из таблицы
+	for (const string& pol_name : operand_names)
+	{
+		Polinom p = active_table->Find(pol_name); // если не найден — бросит исключение
+		namedPolinoms[pol_name] = p;
+	}
+	Polinom result = postfix.Calculate(namedPolinoms); // преобразование в единый полином
+	active_table->Insert(name, result);
+	return result;
+}

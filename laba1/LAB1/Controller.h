@@ -29,7 +29,9 @@ public:
 	void AddPolinom(const string& name, const Polinom& pol);
 	void DeletePolinom(const string& name);
 	Polinom EvaluateExpression(const string& expression, double x, double y, double z);
+	Polinom EvaluatePolinomExpression(const string& name, const string& expression);
 	void PrintActiveTable() const;
+	Polinom* FindPolinomInActiveTable(const string& name);
 };
 
 #endif
