@@ -3,9 +3,12 @@
 
 #include "TTable.h"
 #include <vector>
+#include <iostream>
+
+using namespace std;
 
 template <typename TKey, typename TValue>
-class TArrayTable : public TTable // таблица на массиве
+class TArrayTable : public TTable<TKey, TValue> // таблица на массиве
 {
 	struct TTableRec
 	{
@@ -15,80 +18,59 @@ class TArrayTable : public TTable // таблица на массиве
 	vector<TTableRec> data{};
 public:
 	TArrayTable() = default;
-	size_t size() const noexcept;
-	TValue& operator[](size_t pos);
-	void Print();
-	string GetName() const override;
-	void Delete(TKey key);
-	TValue* Find(TKey key);
-	void Insert(TKey key, TValue value);
-};
 
-template <typename TKey, typename TValue>
-size_t TArrayTable<TKey, TValue>::size() const noexcept
-{
-	return TArrayTable::data.size();
-}
-
-template <typename TKey, typename TValue>
-TValue& TArrayTable<TKey, TValue>::operator[](size_t pos)
-{
-	return data[pos].value;
-}
-
-template <typename TKey, typename TValue>
-void TArrayTable<TKey, TValue>::Delete(TKey key)
-{
-	for (size_t i = 0; i < data.size(); i++)
+	string GetName() const override
 	{
-		if (data[i].key == key)
+		return "Array Table";
+	}
+
+	size_t size() const noexcept override
+	{
+		return data.size();
+	}
+
+	void Print() const override
+	{
+		cout << "Array Table Contents: " << endl;
+		for (const auto& record : data) // Перебираем все записи в таблице
 		{
-			data[i] = data[data.size() - 1];
-			data.pop_back();
-			return;
+			cout << "Key: " << record.key << ", Value: " << record.value << endl;
 		}
 	}
-}
 
-template <typename TKey, typename TValue>
-TValue* TArrayTable<TKey, TValue>::Find(TKey key)
-{
-	for (auto& val : data)
+	void Delete(const TKey& key) override
 	{
-		if (val.key == key)
-			return &val.value;
+		for (auto it = data.begin(); it != data.end(); ++it)
+		{
+			if (it->key == key)
+			{
+				data.erase(it);
+				return;
+			}
+		}
 	}
-	return nullptr;
-}
 
-template <typename TKey, typename TValue>
-void TArrayTable<TKey, TValue>::Insert(TKey key, TValue value)
-{
-	if (Find(key))
-		return;
-	data.push_back({ key, value });
-}
-
-template <typename TKey, typename TValue>
-string TArrayTable<TKey, TValue>::GetName() const override
-{
-	return "Array Table";
-}
-
-template <typename TKey, typename TValue>
-void TArrayTable<TKey, TValue>::Print()
-{
-	cout << "Printing table contents: " << endl;
-	// Перебираем все записи в таблице
-	for (const auto& record : data)
+	TValue* Find(const TKey& key) override
 	{
-		cout << "Key: " << record.key << ", Value: " << record.value << endl;
+		for (auto& val : data)
+		{
+			if (val.key == key)
+				return &val.value;
+		}
+		return nullptr;
 	}
-	// Проверка на случай, если таблица пустая
-	if (data.empty())
+
+	void Insert(const TKey& key, const TValue& value) override
 	{
-		cout << "The table is empty." << endl;
+		if (Find(key))
+			return;
+		data.push_back({ key, value });
 	}
-}
+
+	TValue& operator[](size_t pos)
+	{
+		return data[pos].value;
+	}
+};
 
 #endif

@@ -1,289 +1,177 @@
 ﻿  Controller.cpp
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(81,2): error C2065: 'cout': undeclared identifier
-  (compiling source file 'Controller.cpp')
-  
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(81,2): error C3861: 'cout': identifier not found
-  (compiling source file 'Controller.cpp')
-  
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(85,3): error C2065: 'cout': undeclared identifier
-  (compiling source file 'Controller.cpp')
-  
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(85,3): error C3861: 'cout': identifier not found
-  (compiling source file 'Controller.cpp')
-  
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(90,3): error C2065: 'cout': undeclared identifier
-  (compiling source file 'Controller.cpp')
-  
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(90,3): error C3861: 'cout': identifier not found
-  (compiling source file 'Controller.cpp')
-  
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\THashTableChain.h(74,10): error C2039: 'cout': is not a member of 'std'
-  (compiling source file 'Controller.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\list(23,1):
-      see declaration of 'std'
-  
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\THashTableChain.h(77,14): error C2039: 'cout': is not a member of 'std'
-  (compiling source file 'Controller.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\list(23,1):
-      see declaration of 'std'
-  
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\THashTableChain.h(80,18): error C2039: 'cout': is not a member of 'std'
-  (compiling source file 'Controller.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\list(23,1):
-      see declaration of 'std'
-  
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\THashTableChain.h(82,14): error C2039: 'cout': is not a member of 'std'
-  (compiling source file 'Controller.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\list(23,1):
-      see declaration of 'std'
-  
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\THashTableChain.h(86,14): error C2039: 'cout': is not a member of 'std'
-  (compiling source file 'Controller.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\list(23,1):
-      see declaration of 'std'
-  
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\optional(11): warning STL4038: The contents of <optional> are available only with C++17 or later.
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\THashTableOpen.h(93,8): error C2270: 'GetName': modifiers not allowed on nonmember functions
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.h(19,9): error C2955: 'TTable': use of class template requires template argument list
   (compiling source file 'Controller.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(10,7):
+      see declaration of 'TTable'
   
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\THashTableOpen.h(93,8): error C3158: 'GetName': 'override' can only be applied to a virtual member function
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.h(19,2): error C2976: 'std::vector': too few template arguments
   (compiling source file 'Controller.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(429,7):
+      see declaration of 'std::vector'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.h(22,38): error C2512: 'std::vector': no appropriate default constructor available
+  (compiling source file 'Controller.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(429,7):
+      see declaration of 'std::vector'
   
 C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(5,13): error C2084: function 'Controller::Controller(void)' already has a body
       C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.h(22,2):
       see previous definition of 'Controller::Controller'
   
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(8,23): error C2259: 'TArrayTable<std::string,Polinom>': cannot instantiate abstract class
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(8,7):
-      see declaration of 'TArrayTable<std::string,Polinom>'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(8,23):
-      due to following members:
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(8,23):
-      'void TTable::Insert(const std::string &,const Polinom &)': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(13,15):
-      see declaration of 'TTable::Insert'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(8,23):
-      'void TTable::Delete(const std::string &)': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(14,15):
-      see declaration of 'TTable::Delete'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(8,23):
-      'Polinom TTable::Find(const std::string &) const': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(15,18):
-      see declaration of 'TTable::Find'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(8,23):
-      'void TTable::Print(void) const': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(16,15):
-      see declaration of 'TTable::Print'
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(6,1): error C2512: 'std::vector': no appropriate default constructor available
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(429,7):
+      see declaration of 'std::vector'
   
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(8,51): error C2259: 'TArrayTable<std::string,Polinom>': cannot instantiate abstract class
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TArrayTable.h(8,7):
-      see declaration of 'TArrayTable<std::string,Polinom>'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(8,51):
-      due to following members:
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(8,51):
-      'void TTable::Insert(const std::string &,const Polinom &)': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(13,15):
-      see declaration of 'TTable::Insert'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(8,51):
-      'void TTable::Delete(const std::string &)': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(14,15):
-      see declaration of 'TTable::Delete'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(8,51):
-      'Polinom TTable::Find(const std::string &) const': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(15,18):
-      see declaration of 'TTable::Find'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(8,51):
-      'void TTable::Print(void) const': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(16,15):
-      see declaration of 'TTable::Print'
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(8,9): error C2663: 'std::vector<_Ty,_Alloc>::push_back': no overloaded function has valid conversion for 'this' pointer
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(870,23):
+      could be 'void std::vector<_Ty,_Alloc>::push_back(_Ty &&)'
+          C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(8,9):
+          'void std::vector<_Ty,_Alloc>::push_back(_Ty &&)': cannot convert 'this' pointer from 'std::vector' to 'std::vector<_Ty,_Alloc> &'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(8,2):
+              Reason: cannot convert from 'std::vector' to 'std::vector<_Ty,_Alloc>'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(8,2):
+              Conversion requires a second user-defined-conversion operator or constructor
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(866,23):
+      or       'void std::vector<_Ty,_Alloc>::push_back(const _Ty &)'
+          C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(8,9):
+          'void std::vector<_Ty,_Alloc>::push_back(const _Ty &)': cannot convert 'this' pointer from 'std::vector' to 'std::vector<_Ty,_Alloc> &'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(8,2):
+              Reason: cannot convert from 'std::vector' to 'std::vector<_Ty,_Alloc>'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(8,2):
+              Conversion requires a second user-defined-conversion operator or constructor
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(8,9):
+      while trying to match the argument list '(TArrayTable<std::string,Polinom> *)'
   
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(9,23): error C2259: 'TListTable<std::string,Polinom>': cannot instantiate abstract class
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TListTable.h(9,7):
-      see declaration of 'TListTable<std::string,Polinom>'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(9,23):
-      due to following members:
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(9,23):
-      'void TTable::Insert(const std::string &,const Polinom &)': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(13,15):
-      see declaration of 'TTable::Insert'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(9,23):
-      'void TTable::Delete(const std::string &)': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(14,15):
-      see declaration of 'TTable::Delete'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(9,23):
-      'Polinom TTable::Find(const std::string &) const': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(15,18):
-      see declaration of 'TTable::Find'
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(9,9): error C2663: 'std::vector<_Ty,_Alloc>::push_back': no overloaded function has valid conversion for 'this' pointer
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(870,23):
+      could be 'void std::vector<_Ty,_Alloc>::push_back(_Ty &&)'
+          C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(9,9):
+          'void std::vector<_Ty,_Alloc>::push_back(_Ty &&)': cannot convert 'this' pointer from 'std::vector' to 'std::vector<_Ty,_Alloc> &'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(9,2):
+              Reason: cannot convert from 'std::vector' to 'std::vector<_Ty,_Alloc>'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(9,2):
+              Conversion requires a second user-defined-conversion operator or constructor
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(866,23):
+      or       'void std::vector<_Ty,_Alloc>::push_back(const _Ty &)'
+          C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(9,9):
+          'void std::vector<_Ty,_Alloc>::push_back(const _Ty &)': cannot convert 'this' pointer from 'std::vector' to 'std::vector<_Ty,_Alloc> &'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(9,2):
+              Reason: cannot convert from 'std::vector' to 'std::vector<_Ty,_Alloc>'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(9,2):
+              Conversion requires a second user-defined-conversion operator or constructor
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(9,9):
+      while trying to match the argument list '(TListTable<std::string,Polinom> *)'
   
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(9,50): error C2259: 'TListTable<std::string,Polinom>': cannot instantiate abstract class
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TListTable.h(9,7):
-      see declaration of 'TListTable<std::string,Polinom>'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(9,50):
-      due to following members:
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(9,50):
-      'void TTable::Insert(const std::string &,const Polinom &)': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(13,15):
-      see declaration of 'TTable::Insert'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(9,50):
-      'void TTable::Delete(const std::string &)': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(14,15):
-      see declaration of 'TTable::Delete'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(9,50):
-      'Polinom TTable::Find(const std::string &) const': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(15,18):
-      see declaration of 'TTable::Find'
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(10,9): error C2663: 'std::vector<_Ty,_Alloc>::push_back': no overloaded function has valid conversion for 'this' pointer
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(870,23):
+      could be 'void std::vector<_Ty,_Alloc>::push_back(_Ty &&)'
+          C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(10,9):
+          'void std::vector<_Ty,_Alloc>::push_back(_Ty &&)': cannot convert 'this' pointer from 'std::vector' to 'std::vector<_Ty,_Alloc> &'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(10,2):
+              Reason: cannot convert from 'std::vector' to 'std::vector<_Ty,_Alloc>'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(10,2):
+              Conversion requires a second user-defined-conversion operator or constructor
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(866,23):
+      or       'void std::vector<_Ty,_Alloc>::push_back(const _Ty &)'
+          C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(10,9):
+          'void std::vector<_Ty,_Alloc>::push_back(const _Ty &)': cannot convert 'this' pointer from 'std::vector' to 'std::vector<_Ty,_Alloc> &'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(10,2):
+              Reason: cannot convert from 'std::vector' to 'std::vector<_Ty,_Alloc>'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(10,2):
+              Conversion requires a second user-defined-conversion operator or constructor
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(10,9):
+      while trying to match the argument list '(TSortedArrayTable<std::string,Polinom> *)'
   
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(10,23): error C2259: 'TSortedArrayTable<std::string,Polinom>': cannot instantiate abstract class
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TSortedArrayTable.h(9,7):
-      see declaration of 'TSortedArrayTable<std::string,Polinom>'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(10,23):
-      due to following members:
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(10,23):
-      'void TTable::Insert(const std::string &,const Polinom &)': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(13,15):
-      see declaration of 'TTable::Insert'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(10,23):
-      'void TTable::Delete(const std::string &)': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(14,15):
-      see declaration of 'TTable::Delete'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(10,23):
-      'Polinom TTable::Find(const std::string &) const': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(15,18):
-      see declaration of 'TTable::Find'
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(11,9): error C2663: 'std::vector<_Ty,_Alloc>::push_back': no overloaded function has valid conversion for 'this' pointer
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(870,23):
+      could be 'void std::vector<_Ty,_Alloc>::push_back(_Ty &&)'
+          C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(11,9):
+          'void std::vector<_Ty,_Alloc>::push_back(_Ty &&)': cannot convert 'this' pointer from 'std::vector' to 'std::vector<_Ty,_Alloc> &'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(11,2):
+              Reason: cannot convert from 'std::vector' to 'std::vector<_Ty,_Alloc>'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(11,2):
+              Conversion requires a second user-defined-conversion operator or constructor
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(866,23):
+      or       'void std::vector<_Ty,_Alloc>::push_back(const _Ty &)'
+          C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(11,9):
+          'void std::vector<_Ty,_Alloc>::push_back(const _Ty &)': cannot convert 'this' pointer from 'std::vector' to 'std::vector<_Ty,_Alloc> &'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(11,2):
+              Reason: cannot convert from 'std::vector' to 'std::vector<_Ty,_Alloc>'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(11,2):
+              Conversion requires a second user-defined-conversion operator or constructor
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(11,9):
+      while trying to match the argument list '(TTreeTable<std::string,Polinom> *)'
   
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(10,57): error C2259: 'TSortedArrayTable<std::string,Polinom>': cannot instantiate abstract class
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TSortedArrayTable.h(9,7):
-      see declaration of 'TSortedArrayTable<std::string,Polinom>'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(10,57):
-      due to following members:
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(10,57):
-      'void TTable::Insert(const std::string &,const Polinom &)': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(13,15):
-      see declaration of 'TTable::Insert'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(10,57):
-      'void TTable::Delete(const std::string &)': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(14,15):
-      see declaration of 'TTable::Delete'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(10,57):
-      'Polinom TTable::Find(const std::string &) const': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(15,18):
-      see declaration of 'TTable::Find'
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(12,9): error C2663: 'std::vector<_Ty,_Alloc>::push_back': no overloaded function has valid conversion for 'this' pointer
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(870,23):
+      could be 'void std::vector<_Ty,_Alloc>::push_back(_Ty &&)'
+          C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(12,9):
+          'void std::vector<_Ty,_Alloc>::push_back(_Ty &&)': cannot convert 'this' pointer from 'std::vector' to 'std::vector<_Ty,_Alloc> &'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(12,2):
+              Reason: cannot convert from 'std::vector' to 'std::vector<_Ty,_Alloc>'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(12,2):
+              Conversion requires a second user-defined-conversion operator or constructor
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(866,23):
+      or       'void std::vector<_Ty,_Alloc>::push_back(const _Ty &)'
+          C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(12,9):
+          'void std::vector<_Ty,_Alloc>::push_back(const _Ty &)': cannot convert 'this' pointer from 'std::vector' to 'std::vector<_Ty,_Alloc> &'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(12,2):
+              Reason: cannot convert from 'std::vector' to 'std::vector<_Ty,_Alloc>'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(12,2):
+              Conversion requires a second user-defined-conversion operator or constructor
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(12,9):
+      while trying to match the argument list '(THashTableOpen<std::string,Polinom> *)'
   
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(11,23): error C2259: 'TTreeTable<std::string,Polinom>': cannot instantiate abstract class
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTreeTable.h(8,7):
-      see declaration of 'TTreeTable<std::string,Polinom>'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(11,23):
-      due to following members:
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(11,23):
-      'void TTable::Insert(const std::string &,const Polinom &)': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(13,15):
-      see declaration of 'TTable::Insert'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(11,23):
-      'void TTable::Delete(const std::string &)': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(14,15):
-      see declaration of 'TTable::Delete'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(11,23):
-      'Polinom TTable::Find(const std::string &) const': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(15,18):
-      see declaration of 'TTable::Find'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(11,23):
-      'void TTable::Print(void) const': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(16,15):
-      see declaration of 'TTable::Print'
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(13,9): error C2663: 'std::vector<_Ty,_Alloc>::push_back': no overloaded function has valid conversion for 'this' pointer
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(870,23):
+      could be 'void std::vector<_Ty,_Alloc>::push_back(_Ty &&)'
+          C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(13,9):
+          'void std::vector<_Ty,_Alloc>::push_back(_Ty &&)': cannot convert 'this' pointer from 'std::vector' to 'std::vector<_Ty,_Alloc> &'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(13,2):
+              Reason: cannot convert from 'std::vector' to 'std::vector<_Ty,_Alloc>'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(13,2):
+              Conversion requires a second user-defined-conversion operator or constructor
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(866,23):
+      or       'void std::vector<_Ty,_Alloc>::push_back(const _Ty &)'
+          C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(13,9):
+          'void std::vector<_Ty,_Alloc>::push_back(const _Ty &)': cannot convert 'this' pointer from 'std::vector' to 'std::vector<_Ty,_Alloc> &'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(13,2):
+              Reason: cannot convert from 'std::vector' to 'std::vector<_Ty,_Alloc>'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(13,2):
+              Conversion requires a second user-defined-conversion operator or constructor
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(13,9):
+      while trying to match the argument list '(THashTableChain<std::string,Polinom> *)'
   
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(11,50): error C2259: 'TTreeTable<std::string,Polinom>': cannot instantiate abstract class
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTreeTable.h(8,7):
-      see declaration of 'TTreeTable<std::string,Polinom>'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(11,50):
-      due to following members:
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(11,50):
-      'void TTable::Insert(const std::string &,const Polinom &)': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(13,15):
-      see declaration of 'TTable::Insert'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(11,50):
-      'void TTable::Delete(const std::string &)': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(14,15):
-      see declaration of 'TTable::Delete'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(11,50):
-      'Polinom TTable::Find(const std::string &) const': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(15,18):
-      see declaration of 'TTable::Find'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(11,50):
-      'void TTable::Print(void) const': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(16,15):
-      see declaration of 'TTable::Print'
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(16,14): error C2662: 'bool std::vector<_Ty,_Alloc>::empty(void) noexcept const': cannot convert 'this' pointer from 'std::vector' to 'const std::vector<_Ty,_Alloc> &'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(16,7):
+      Reason: cannot convert from 'std::vector' to 'const std::vector<_Ty,_Alloc>'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(16,7):
+      Conversion requires a second user-defined-conversion operator or constructor
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(1866,47):
+      see declaration of 'std::vector<_Ty,_Alloc>::empty'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(16,14):
+      while trying to match the argument list '()'
   
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(12,23): error C2259: 'THashTableOpen<std::string,Polinom>': cannot instantiate abstract class
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\THashTableOpen.h(10,7):
-      see declaration of 'THashTableOpen<std::string,Polinom>'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(12,23):
-      due to following members:
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(12,23):
-      'void TTable::Insert(const std::string &,const Polinom &)': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(13,15):
-      see declaration of 'TTable::Insert'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(12,23):
-      'void TTable::Delete(const std::string &)': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(14,15):
-      see declaration of 'TTable::Delete'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(12,23):
-      'Polinom TTable::Find(const std::string &) const': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(15,18):
-      see declaration of 'TTable::Find'
-  
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(12,54): error C2259: 'THashTableOpen<std::string,Polinom>': cannot instantiate abstract class
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\THashTableOpen.h(10,7):
-      see declaration of 'THashTableOpen<std::string,Polinom>'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(12,54):
-      due to following members:
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(12,54):
-      'void TTable::Insert(const std::string &,const Polinom &)': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(13,15):
-      see declaration of 'TTable::Insert'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(12,54):
-      'void TTable::Delete(const std::string &)': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(14,15):
-      see declaration of 'TTable::Delete'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(12,54):
-      'Polinom TTable::Find(const std::string &) const': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(15,18):
-      see declaration of 'TTable::Find'
-  
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(13,23): error C2259: 'THashTableChain<std::string,Polinom>': cannot instantiate abstract class
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\THashTableChain.h(9,7):
-      see declaration of 'THashTableChain<std::string,Polinom>'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(13,23):
-      due to following members:
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(13,23):
-      'void TTable::Insert(const std::string &,const Polinom &)': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(13,15):
-      see declaration of 'TTable::Insert'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(13,23):
-      'void TTable::Delete(const std::string &)': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(14,15):
-      see declaration of 'TTable::Delete'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(13,23):
-      'Polinom TTable::Find(const std::string &) const': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(15,18):
-      see declaration of 'TTable::Find'
-  
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(13,55): error C2259: 'THashTableChain<std::string,Polinom>': cannot instantiate abstract class
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\THashTableChain.h(9,7):
-      see declaration of 'THashTableChain<std::string,Polinom>'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(13,55):
-      due to following members:
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(13,55):
-      'void TTable::Insert(const std::string &,const Polinom &)': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(13,15):
-      see declaration of 'TTable::Insert'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(13,55):
-      'void TTable::Delete(const std::string &)': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(14,15):
-      see declaration of 'TTable::Delete'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(13,55):
-      'Polinom TTable::Find(const std::string &) const': is abstract
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(15,18):
-      see declaration of 'TTable::Find'
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(17,18): error C2678: binary '[': no operator found which takes a left-hand operand of type 'std::vector' (or there is no acceptable conversion)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(1895,40):
+      could be 'const _Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept const'
+          C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(17,18):
+          'const _Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept const': cannot convert 'this' pointer from 'std::vector' to 'const std::vector<_Ty,_Alloc> &'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(17,18):
+              Reason: cannot convert from 'std::vector' to 'const std::vector<_Ty,_Alloc>'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(17,18):
+              Conversion requires a second user-defined-conversion operator or constructor
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(1885,34):
+      or       '_Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept'
+          C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(17,18):
+          '_Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept': cannot convert 'this' pointer from 'std::vector' to 'std::vector<_Ty,_Alloc> &'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(17,18):
+              Reason: cannot convert from 'std::vector' to 'std::vector<_Ty,_Alloc>'
+              C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(17,18):
+              Conversion requires a second user-defined-conversion operator or constructor
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(17,18):
+      while trying to match the argument list '(std::vector, int)'
   
 C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(20,14): error C2061: syntax error: identifier '{ctor}'
 C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(21,1): error C2143: syntax error: missing ';' before '{'
@@ -314,19 +202,34 @@ C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(67,6):
 C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(69,6): error C2065: 'active_table': undeclared identifier
 C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(71,31): error C2065: 'active_table': undeclared identifier
 C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(72,3): error C2065: 'active_table': undeclared identifier
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(82,27): error C2440: 'return': cannot convert from 'Polinom' to 'Polinom *'
-      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(82,27):
-      No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(82,23): error C2662: 'TValue *TTable<TKey,TValue>::Find(const TKey &)': cannot convert 'this' pointer from 'TTable' to 'TTable<TKey,TValue> &'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(82,9):
+      Reason: cannot convert from 'TTable' to 'TTable<TKey,TValue>'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(82,9):
+      Conversion requires a second user-defined-conversion operator or constructor
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(18,18):
+      see declaration of 'TTable<TKey,TValue>::Find'
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(82,23):
+      while trying to match the argument list '(const std::string)'
   
 C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(92,15): error C2065: 'active_table': undeclared identifier
 C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.cpp(96,2): error C2065: 'active_table': undeclared identifier
   main.cpp
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\optional(11): warning STL4038: The contents of <optional> are available only with C++17 or later.
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\THashTableOpen.h(93,8): error C2270: 'GetName': modifiers not allowed on nonmember functions
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.h(19,9): error C2955: 'TTable': use of class template requires template argument list
   (compiling source file 'main.cpp')
+      C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\TTable.h(10,7):
+      see declaration of 'TTable'
   
-C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\THashTableOpen.h(93,8): error C3158: 'GetName': 'override' can only be applied to a virtual member function
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.h(19,2): error C2976: 'std::vector': too few template arguments
   (compiling source file 'main.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(429,7):
+      see declaration of 'std::vector'
+  
+C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\Controller.h(22,38): error C2512: 'std::vector': no appropriate default constructor available
+  (compiling source file 'main.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(429,7):
+      see declaration of 'std::vector'
   
 C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(9,13): warning C4566: character represented by universal-character-name '\u041C' cannot be represented in the current code page (1252)
 C:\Users\vkutergi\source\Algebra_of_polinomials\laba1\LAB1\main.cpp(9,13): warning C4566: character represented by universal-character-name '\u0415' cannot be represented in the current code page (1252)

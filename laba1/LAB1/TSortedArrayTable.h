@@ -3,109 +3,108 @@
 
 #include "TTable.h"
 #include <vector>
+#include <algorithm>
 #include <iostream>
 
+using namespace std;
+
 template <typename TKey, typename TValue>
-class TSortedArrayTable : public TTable // таблица на упорядоченном массиве
+class TSortedArrayTable : public TTable<TKey, TValue> // таблица на упорядоченном массиве
 {
     struct TTableRec
     {
         TKey key;
         TValue value;
+
+        bool operator<(const TTableRec& other) const
+        {
+            return key < other.key;
+        }
     };
-    std::vector<TTableRec> data{};
+    vector<TTableRec> data{};
+
+    size_t FindInsertionPos(const TKey& key) const // Бинарный поиск индекса для вставки/поиска
+    {
+        size_t left = 0;
+        size_t right = data.size();
+
+        while (left < right) 
+        {
+            size_t mid = left + (right - left) / 2;
+            if (data[mid].key < key) 
+            {
+                left = mid + 1;
+            }
+            else 
+            {
+                right = mid;
+            }
+        }
+        return left;
+    }
 public:
     TSortedArrayTable() = default;
-    size_t size() const noexcept;
-    TValue& operator[](size_t pos);
-    void Print() const;
-    string GetName() const override;
-    void Delete(TKey key);
-    TValue* Find(TKey key);
-    void Insert(TKey key, TValue value);
 
-private:
-    size_t FindInsertionIndex(const TKey& key); // Метод для поиска индекса вставки
+    string GetName() const override
+    {
+		return "Sorted Array Table";
+    }
+
+	size_t size() const noexcept override
+    {
+        return data.size();
+    }
+
+    void Insert(const TKey& key, const TValue& value) override
+    {
+		size_t pos = FindInsertionPos(key);
+        if (pos < data.size() && data[pos].key == key)
+        {
+            data[pos].value = value; // обновление существующего
+        }
+        else
+        {
+			data.insert(data.begin() + pos, { key, value }); // вставка нового
+        }
+    }
+
+    void Delete(const TKey& key) override
+    {
+		size_t pos = FindInsertionPos(key);
+		if (pos < data.size() && data[pos].key == key)
+		{
+			data.erase(data.begin() + pos); 
+		}
+    }
+
+    TValue* Find(const TKey& key) override
+    {
+        size_t pos = FindInsertionPos(key);
+        if (pos < data.size() && data[pos].key == key)
+        {
+            return &data[pos].value;
+        }
+        return nullptr;
+    }
+
+    void Print() const override
+    {
+        cout << "Sorted Array Table Contents: " << endl;
+        for (const auto& record : data) // Перебираем все записи в таблице
+        {
+            cout << "Key: " << record.key << ", Value: " << record.value << endl;
+        }
+    }
+
+    TValue& operator[](const TKey& key) 
+    {
+        size_t pos = FindInsertionPos(key);
+        if (pos >= data.size() || data[pos].key != key)
+        {
+			throw out_of_range("Key not found");
+        }
+        return data[pos].value;
+    }
 };
-
-template <typename TKey, typename TValue>
-size_t TSortedArrayTable<TKey, TValue>::size() const noexcept
-{
-    return data.size();
-}
-
-template <typename TKey, typename TValue>
-TValue& TSortedArrayTable<TKey, TValue>::operator[](size_t pos)
-{
-    if (pos >= size()) {
-        throw std::out_of_range("Position out of range");
-    }
-    return data[pos].value;
-}
-
-template <typename TKey, typename TValue>
-void TSortedArrayTable<TKey, TValue>::Print() const
-{
-    for (const auto& rec : data) {
-        std::cout << "Key: " << rec.key << ", Value: " << rec.value << '\n';
-    }
-}
-
-template <typename TKey, typename TValue>
-string TSortedArrayTable<TKey, TValue>::GetName() const override
-{
-    return "Sorted Array Table";
-}
-
-template <typename TKey, typename TValue>
-void TSortedArrayTable<TKey, TValue>::Delete(TKey key)
-{
-    auto it = std::find_if(data.begin(), data.end(), [&key](const TTableRec& rec) {
-        return rec.key == key;
-        });
-    if (it != data.end()) {
-        data.erase(it);
-    }
-}
-
-template <typename TKey, typename TValue>
-TValue* TSortedArrayTable<TKey, TValue>::Find(TKey key)
-{
-    auto it = std::find_if(data.begin(), data.end(), [&key](const TTableRec& rec) {
-        return rec.key == key;
-        });
-    if (it != data.end()) {
-        return &(it->value);
-    }
-    return nullptr;
-}
-
-template <typename TKey, typename TValue>
-void TSortedArrayTable<TKey, TValue>::Insert(TKey key, TValue value)
-{
-    if (Find(key) == nullptr) {
-        size_t index = FindInsertionIndex(key);
-        data.insert(data.begin() + index, TTableRec{ key, value });
-    }
-}
-
-template <typename TKey, typename TValue>
-size_t TSortedArrayTable<TKey, TValue>::FindInsertionIndex(const TKey& key)
-{
-    size_t left = 0;
-    size_t right = data.size();
-
-    while (left < right) {
-        size_t mid = left + (right - left) / 2;
-        if (data[mid].key < key) {
-            left = mid + 1;
-        }
-        else {
-            right = mid;
-        }
-    }
-
-    return left;
-}
 
 #endif

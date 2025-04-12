@@ -2,76 +2,86 @@
 #define TLISTTABLE_H
 
 #include "TTable.h"
-#include "SinglyList.h"
+#include <iostream>
+#include <list>
 #include <stdexcept>
 
+using namespace std;
+
 template <typename TKey, typename TValue>
-class TListTable : public TTable // таблица на односвязном списке
+class TListTable : public TTable<TKey, TValue> // таблица на односвязном списке
 {
     struct TTableRec
     {
         TKey key;
         TValue value;
     };
-    SinglyList<TTableRec> data;
+    list<TTableRec> data;
 public:
     TListTable() = default;
 
-    size_t size() const noexcept
+	string GetName() const override
+	{
+		return "List Table";
+	}
+
+    size_t size() const noexcept override
     {
-        return data.length();
+        return data.size();
     }
 
-    TValue& operator[](size_t pos)
+    void Insert(const TKey& key, const TValue& value) override
     {
-        if (pos >= size()) {
-            throw std::out_of_range("Index out of range");
+        for (auto& node : data)
+        {
+            if (node.key == key)
+            {
+                node.value = value;
+                return;
+            }
         }
+        data.push_back(TTableRec{ key, value });
+    }
 
-        auto node = data.begin();
-        for (size_t i = 0; i < pos; ++i) {
-            ++node;
+    void Delete(const TKey& key) override
+    {
+		data.remove_if([&key](const TTableRec& node) 
+        {
+            return node.key == key; 
+        });
+    }
+
+	TValue* Find(const TKey& key) override
+    {
+        for (auto& node : data) 
+        {
+            if (node.key == key) 
+            {
+                return &node.value;
+            }
         }
-        return node->value;
+        return nullptr; 
     }
 
     void Print() const
     {
-        for (auto it = data.begin(); it != data.end(); ++it) {
-            std::cout << "Key: " << it->key << ", Value: " << it->value << std::endl;
+        cout << "List Table Contents: " << endl;
+        for (const auto& node : data) 
+        {
+            cout << "Key: " << node.key << ", Value: " << node.value << endl;
         }
     }
 
-    string GetName() const override
+    TValue& operator[](const TKey& key)
     {
-        return "List Table";
-    }
-
-    void Delete(TKey key)
-    {
-        for (auto it = data.begin(); it != data.end(); ++it) {
-            if (it->key == key) {
-                data.erase(it);
-                return;
+        for (auto& node : data)
+        {
+            if (node.key == key)
+            {
+                return node.value;
             }
         }
-    }
-
-    TValue* Find(TKey key)
-    {
-        for (auto it = data.begin(); it != data.end(); ++it) {
-            if (it->key == key) {
-                return &it->value;
-            }
-        }
-        return nullptr; // Если ключ не найден
-    }
-
-    void Insert(TKey key, TValue value)
-    {
-        if (Find(key)) 
-            return;
-        data.push_back(TTableRec{ key, value });
+        throw out_of_range("Key not found");
     }
 };
 

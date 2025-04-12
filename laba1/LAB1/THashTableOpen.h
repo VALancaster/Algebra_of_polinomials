@@ -6,165 +6,188 @@
 #include <iostream>
 #include <optional> // Для std::nullopt
 
+using namespace std;
+
 template <typename TKey, typename TValue>
-class THashTableOpen : public TTable // хеш-таблица с открытым перемешиванием
+class THashTableOpen : public TTable<TKey, TValue> // хеш-таблица с открытым перемешиванием
 {
-    struct Node
+    enum class CellState { 
+        EMPTY, // никогда не содержала данных
+        OCCUPIED, // хранит актуальные данные
+        DELETED // помечена как удаленная, но может быть переиспольована
+    };
+
+    struct Cell
     {
         TKey key;
         TValue value;
-        bool isOccupied = false;
-        bool isDeleted = false; // Флаг для пометки удалённых ячеек
+        CellState state; // текущее состояние (EMPTY/ OCCUPIED/ DELETED)
     };
 
-    std::vector<Node> data;
-    size_t bucketCount;
+    vector<Cell> data;
+    size_t itemCount = 0; // cчетчик элементов/записей в таблице 
+    size_t capacity; // емкость таблицы
 
-    size_t HashFunction(TKey key) const;
+    size_t HashFunction(const TKey& key) const
+    {
+        return hash<TKey>()(key) % capacity;
+    }
+
+    size_t Probe(size_t index, size_t attempt) const
+    {
+        return (index + attempt) % capacity;
+    }
+
+    void Rehash()
+    {
+        capacity *= 2;
+		vector<Cell> newData(capacity);
+        swap(data, newData);
+        itemCount = 0;
+
+        for (const auto& cell : newData)
+        {
+            if (cell.state == CellState::OCCUPIED)
+            {
+                Insert(cell.key, cell.value);
+            }
+        }
+    }
 
 public:
-    THashTableOpen(size_t buckets = 10) : bucketCount(buckets)
+    THashTableOpen(size_t initialCapacity = 16) : capacity(initialCapacity)
     {
-        data.resize(bucketCount);
+        data.resize(capacity);
     }
 
-    size_t size() const noexcept;
-    TValue& operator[](TKey key);
-    void Print() const;
-    string GetName() const override;
-    void Delete(TKey key);
-    TValue* Find(TKey key);
-    void Insert(TKey key, TValue value);
+    string GetName() const override
+    {
+        return "Hash Table Open";
+    }
+
+    size_t size() const noexcept override
+    {
+        return itemCount;
+    }
+
+    void Insert(const TKey& key, const TValue& value) override
+    {
+        if (itemCount >= capacity * 0.7)
+        {
+            Rehash();
+        }
+
+        size_t attempt = 0; // счетчик попыток (для пробирования)
+		size_t index = HashFunction(key);
+        size_t firstDeleted = capacity; // запоминаем первую DELETED-ячейку
+
+        while (attempt < capacity) // поиск места для вставки по всей таблице
+        {
+            auto& cell = data[index]; // текущая ячейка
+            if (cell.state == CellState::OCCUPIED && cell.key == key) // ключ уже существует
+            {
+                cell.value = value; // перезаписали значение
+				return; 
+            }
+            if (cell.state == CellState::DELETED && firstDeleted = capacity) // ячейка была удалена
+            {
+                firstDeleted = index; // запомнили ее
+            }
+            if (cell.state == CellState::EMPTY) // найдена пустая ячейка
+            {
+                if (firstDeleted != capacity) // если до этого была DELETED - ячейка
+                {
+                    index = firstDeleted; // вставляем в нее
+                }
+                data[index] = { key, value, CellState::OCCUPIED }; // успешно вставили
+				itemCount++;
+                return;
+            }
+            index = Probe(HashFunction(key), ++attempt); // вычисляет следующий индекс для проверки
+        }
+
+        if (firstDeleted != capacity)
+        {
+            data[firstDeleted] = {key, value, CellState::OCCUPIED};
+            itemCount++;
+        }
+    }
+
+    void Delete(const TKey& key) override
+    {
+        size_t attempt = 0; // счетчик попыток (для пробирования)
+		size_t index = HashFunction(key);
+
+        while (attempt < capacity)
+        {
+			auto& cell = data[index]; // текущая ячейка
+            if (cell.state == CellState::Empty) // найдена пустая ячейка
+            {
+                break;
+            }
+            if (cell.state == CellState::OCCUPIED && cell.key == key) // ключ существует
+            {
+                cell.state = CellState::DELETED; 
+                itemCount--;
+                return;
+            }
+			index = Probe(HashFunction(key), ++attempt); // вычисляет следующий индекс для проверки
+        }
+    }
+
+    TValue* Find(const TKey& key) override
+    {
+		size_t attempt = 0; // счетчик попыток (для пробирования)
+        size_t index = HashFunction(key);
+
+        while (attempt < capacity)
+        {
+			auto& cell = data[index]; // текущая ячейка
+            if (cell.state == CellState::Empty) // найдена пустая ячейка
+            {
+                break;
+            }
+            if (cell.state == CellState::OCCUPIED && cell.key == key) // ключ существует
+            {
+				return &cell.value; // возвращает значение
+            }
+            index = Probe(HashFunction(key), ++attempt); // вычисляет следующий индекс для проверки
+        }
+        return nullptr;
+    }
+
+    void Print() const override
+    {
+        cout << "Hash Table Open Contents:" << endl;
+        for (size_t i = 0; i < capacity; ++i)
+        {
+			const auto& cell = data[i]; // текущая ячейка
+            if (cell.State == CellState::OCCUPIED)
+            {
+                cout << "Key: " << cell.key << ", Value: " << cell.value << endl;
+            }
+        }
+    }
+
+    TValue& operator[](const TKey& key)
+    {
+        size_t attempt = 0; // счетчик попыток (для пробирования)
+        size_t index = HashFunction(key);
+        while (attempt < capacity)
+        {
+            auto& cell = data[index]; // текущая ячейка
+            if (cell.state == CellState::OCCUPIED && cell.key == key)
+            {
+                return cell.value;
+            }
+            if (cell.state == CellState::EMPTY)
+            {
+                break;
+            }
+            index = Probe(HashFunction(key), ++attempt);
+        }
+        throw out_of_range("Key not found");
+    }
 };
-
-template <typename TKey, typename TValue>
-size_t THashTableOpen<TKey, TValue>::HashFunction(TKey key) const
-{
-    return std::hash<TKey>()(key) % bucketCount;
-}
-
-template <typename TKey, typename TValue>
-size_t THashTableOpen<TKey, TValue>::size() const noexcept
-{
-    size_t count = 0;
-    for (const auto& node : data)
-    {
-        if (node.isOccupied && !node.isDeleted)
-        {
-            count++;
-        }
-    }
-    return count;
-}
-
-template <typename TKey, typename TValue>
-TValue& THashTableOpen<TKey, TValue>::operator[](TKey key)
-{
-    size_t index = HashFunction(key);
-    size_t start_index = index;
-
-    while (data[index].isOccupied)
-    {
-        if (data[index].key == key && !data[index].isDeleted)
-            return data[index].value;
-
-        index = (index + 1) % bucketCount;
-        if (index == start_index)
-            throw std::out_of_range("Key not found");
-    }
-
-    throw std::out_of_range("Key not found");
-}
-
-template <typename TKey, typename TValue>
-void THashTableOpen<TKey, TValue>::Print() const
-{
-    std::cout << "Hash table contents:" << std::endl;
-    for (size_t i = 0; i < data.size(); ++i)
-    {
-        if (data[i].isOccupied && !data[i].isDeleted)
-        {
-            std::cout << "Index " << i << ": (" << data[i].key << ": " << data[i].value << ")" << std::endl;
-        }
-    }
-}
-
-template <typename TKey, typename TValue>
-string GetName() const override
-{
-    return "Hash Table Open";
-}
-
-template <typename TKey, typename TValue>
-void THashTableOpen<TKey, TValue>::Delete(TKey key)
-{
-    size_t index = HashFunction(key);
-    size_t start_index = index;
-
-    while (data[index].isOccupied)
-    {
-        if (data[index].key == key && !data[index].isDeleted)
-        {
-            data[index].isDeleted = true;
-            return;
-        }
-
-        index = (index + 1) % bucketCount;
-        if (index == start_index)
-            return;
-    }
-}
-
-template <typename TKey, typename TValue>
-TValue* THashTableOpen<TKey, TValue>::Find(TKey key)
-{
-    size_t index = HashFunction(key);
-    size_t start_index = index;
-
-    while (data[index].isOccupied)
-    {
-        if (data[index].key == key && !data[index].isDeleted)
-            return &data[index].value;
-
-        index = (index + 1) % bucketCount;
-        if (index == start_index)
-            return nullptr;
-    }
-    return nullptr;
-}
-
-template <typename TKey, typename TValue>
-void THashTableOpen<TKey, TValue>::Insert(TKey key, TValue value)
-{
-    size_t index = HashFunction(key);
-    size_t start_index = index;
-    bool foundDeleted = false;
-    size_t deletedIndex = 0;
-
-    while (data[index].isOccupied && !data[index].isDeleted)
-    {
-        if (data[index].key == key)
-        {
-            data[index].value = value;
-            return;
-        }
-
-        index = (index + 1) % bucketCount;
-        if (index == start_index)
-            return;
-    }
-
-    if (!data[index].isOccupied)
-    {
-        data[index] = { key, value, true, false };
-    }
-    else
-    {
-        data[index].key = key;
-        data[index].value = value;
-        data[index].isOccupied = true;
-        data[index].isDeleted = false;
-    }
-}
 
 #endif
