@@ -17,38 +17,84 @@ Controller::Controller()
 		active_table = tables[0];
 }
 
-~Controller::Controller()
+Controller::~Controller()
 {
 	for (auto table : tables)
 		delete table;
 }
 
-void SetActiveTable(int index)
+void Controller::SetActiveTable(int index)
 {
-	if (index >= 0 && index < tables.size())
+	if (index >= 0 && index < static_cast<int>(tables.size()))
 	{
 		active_table = tables[index];
 		cout << "Active table set to: " << active_table->GetName() << endl;
 	}
 	else
+	{
 		throw out_of_range("Invalid table index");
+	}
 }
 
-void AddPolinom(const string& name, const Polinom& pol)
+void Controller::AddPolinom(const string& name, const Polinom& pol)
 {
 	for (auto table : tables)
 		table->Insert(name, pol);
 	cout << "Polinom " << name << " added to all tables." << endl;
 }
 
-void DeletePolinom(const string& name)
+void Controller::DeletePolinom(const string& name)
 {
 	for (auto table : tables)
-		table->Delete(name); 
+		table->Delete(name);
 	cout << "Polinom " << name << " deleted from all tables." << endl;
 }
 
-double EvaluateExpression(const string& expression, double x, double y, double z)
+void Controller::PrintActiveTable() const
+{
+	if (active_table)
+	{
+		cout << "Active table: " << active_table->GetName() << endl;
+		active_table->Print();
+	}
+	else
+	{
+		cout << "No active table selected." << endl;
+	}
+}
+
+Polinom* Controller::FindPolinom(const string& name)
+{
+	for (auto table : tables)
+	{
+		Polinom* p = table->Find(name);
+		if (p)
+			return p;
+	}
+	return nullptr; // не найдено ни в одной таблице
+}
+
+Polinom Controller::EvaluatePolinomExpression(const string& name, const string& expression)
+{
+	TPostfix postfix(expression);
+	vector<string> operand_names = postfix.GetOperands();
+	map<string, Polinom> namedPolinoms;
+	for (const string& pol_name : operand_names)
+	{
+		Polinom* p = active_table->Find(pol_name);
+		if (!p)
+			throw runtime_error("Polinom not found: " + pol_name);
+		namedPolinoms[pol_name] = *p;
+	}
+	Polinom result = postfix.Calculate(namedPolinoms);
+	active_table->Insert(name, result);
+	return result;
+}
+
+
+
+/*
+double Controller::EvaluateExpression(const string& expression, double x, double y, double z)
 {
 	try
 	{
@@ -64,35 +110,4 @@ double EvaluateExpression(const string& expression, double x, double y, double z
 	}
 }
 
-void PrintActiveTable() const
-{
-	if (active_table)
-	{
-		cout << "Active table: " << active_table->GetName() << endl;
-		active_table->PrintTable();
-	}
-	else
-		cout << "No active table selected." << endl;
-}
-
-Polinom* Controller::FindPolinomInActiveTable(const std::string& name) 
-{
-	if (!active_table)
-		return nullptr;
-	return active_table->Find(name);
-}
-
-Polinom EvaluatePolinomExpression(const string& name, const string& expression)
-{
-	TPostfix postfix(expression);
-	vector<string> operand_names = postfix.GetOperands(); // получаем список операндов (имена полиномов)
-	map<string, Polinom> namedPolinoms; // создаём временную map<string, Polinom> и заполняем из таблицы
-	for (const string& pol_name : operand_names)
-	{
-		Polinom p = active_table->Find(pol_name); // если не найден — бросит исключение
-		namedPolinoms[pol_name] = p;
-	}
-	Polinom result = postfix.Calculate(namedPolinoms); // преобразование в единый полином
-	active_table->Insert(name, result);
-	return result;
-}
+*/

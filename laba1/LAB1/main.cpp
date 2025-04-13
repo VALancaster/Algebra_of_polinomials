@@ -9,9 +9,9 @@ void printMenu() {
     cout << "\n===== МЕНЮ УПРАВЛЕНИЯ ПОЛИНОМАМИ =====\n";
     cout << "1. Выбрать активную таблицу\n";
     cout << "2. Вывести содержимое активной таблицы\n";
-    cout << "3. Добавить полином в таблицу\n";
+    cout << "3. Добавить полином в таблицы\n";
     cout << "4. Удалить полином по ключу\n";
-    cout << "5. Задать полином\n";
+    cout << "5. Вычислить и сохранить полиномное выражение\n";
     cout << "6. Взять производную от полинома\n";
     cout << "7. Вычислить значение полинома в точке\n";
     cout << "8. Выйти\n";
@@ -32,7 +32,14 @@ int main() {
         cin.ignore();
 
         if (choice == 1) {
-            cout << "Выберите таблицу (0 - Array, 1 - List, 2 - SortedArray, 3 - Tree, 4 - HashOpen, 5 - HashChain): ";
+            cout << "Выберите таблицу:\n"
+                << "0 - Array\n"
+                << "1 - List\n"
+                << "2 - SortedArray\n"
+                << "3 - Tree\n"
+                << "4 - HashOpen\n"
+                << "5 - HashChain\n"
+                << "Ваш выбор: ";
             int index;
             cin >> index;
             try {
@@ -53,8 +60,7 @@ int main() {
             cin.ignore();
             cout << "Введите полином (например: 2x^2y + 3xy^2 - 1): ";
             getline(cin, input);
-            try 
-            {
+            try {
                 Polinom p(input);
                 controller.AddPolinom(key, p);
             }
@@ -70,14 +76,14 @@ int main() {
         }
 
         else if (choice == 5) {
-            cout << "Задайте новый полином. Введите его название: ";
+            cout << "Введите название результирующего полинома: ";
             cin >> key;
             cin.ignore();
-            cout << "Введите значение полинома (алгебраическое выражение. например, pol1 + pol2 * pol3 - pol4): ";
+            cout << "Введите выражение с именами полиномов (например: pol1 + pol2 * pol3): ";
             getline(cin, input);
             try {
                 Polinom result = controller.EvaluatePolinomExpression(key, input);
-                cout << "Полином '" << key << "' успешно вычислен и сохранен.\n";
+                cout << "Полином '" << key << "' успешно вычислен и сохранён.\n";
                 cout << "Результат: " << result << endl;
             }
             catch (const exception& e) {
@@ -90,7 +96,7 @@ int main() {
             cin >> key;
             cout << "Введите переменную (x, y или z), по которой брать производную: ";
             cin >> var;
-            Polinom* p = controller.FindPolinomInActiveTable(key);
+            Polinom* p = controller.FindPolinom(key);
             if (!p) {
                 cout << "Полином с таким ключом не найден.\n";
             }
@@ -105,7 +111,7 @@ int main() {
             double x, y, z;
             cout << "Введите значения x, y, z через пробел: ";
             cin >> x >> y >> z;
-            Polinom* p = controller.FindPolinomInActiveTable(key);
+            Polinom* p = controller.FindPolinom(key);
             if (!p) {
                 cout << "Полином с таким ключом не найден.\n";
             }
