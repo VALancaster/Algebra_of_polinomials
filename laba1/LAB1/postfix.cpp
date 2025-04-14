@@ -11,25 +11,25 @@ TPostfix::TPostfix(string infx) : infix(infx)
 	ToPostfix();
 }
 
-string GetInfix() const 
+string TPostfix::GetInfix() const 
 {
-	return TPostfix::infix;
+	return infix;
 }
 
-string GetPostfix() const 
+string TPostfix::GetPostfix() const 
 {
-	return TPostfix::postfix;
+	return postfix;
 }
 
-vector<string> GetOperands() // вернет вектор операндов (символов)
+vector<string> TPostfix::GetOperands() const // вернет вектор операндов (символов)
 { 
 	vector<string> oper;
-	for (const auto& item : TPostfix::operands) 
+	for (const auto& item : operands) 
 		oper.push_back(item.first);
 	return oper;
 }
 
-void ParseInf() 
+void TPostfix::ParseInf() 
 {
 	string operand;
 	for (char c : infix) 
@@ -51,7 +51,7 @@ void ParseInf()
 		lexems.push_back(operand);
 }
 
-void ToPostfix() 
+void TPostfix::ToPostfix() 
 {
 	ParseInf();
 	TStack<string> s;

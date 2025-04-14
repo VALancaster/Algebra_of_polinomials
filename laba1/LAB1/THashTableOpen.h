@@ -89,7 +89,7 @@ public:
                 cell.value = value; // перезаписали значение
 				return; 
             }
-            if (cell.state == CellState::DELETED && firstDeleted = capacity) // ячейка была удалена
+            if (cell.state == CellState::DELETED && firstDeleted == capacity) // ячейка была удалена
             {
                 firstDeleted = index; // запомнили ее
             }
@@ -121,7 +121,7 @@ public:
         while (attempt < capacity)
         {
 			auto& cell = data[index]; // текущая ячейка
-            if (cell.state == CellState::Empty) // найдена пустая ячейка
+            if (cell.state == CellState::EMPTY) // найдена пустая ячейка
             {
                 break;
             }
@@ -143,7 +143,7 @@ public:
         while (attempt < capacity)
         {
 			auto& cell = data[index]; // текущая ячейка
-            if (cell.state == CellState::Empty) // найдена пустая ячейка
+            if (cell.state == CellState::EMPTY) // найдена пустая ячейка
             {
                 break;
             }
@@ -162,7 +162,7 @@ public:
         for (size_t i = 0; i < capacity; ++i)
         {
 			const auto& cell = data[i]; // текущая ячейка
-            if (cell.State == CellState::OCCUPIED)
+            if (cell.state == CellState::OCCUPIED)
             {
                 cout << "Key: " << cell.key << ", Value: " << cell.value << endl;
             }

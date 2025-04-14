@@ -18,8 +18,10 @@ void printMenu() {
     cout << "Выберите действие: ";
 }
 
-int main() {
+int main() 
+{
     setlocale(LC_ALL, "Russian");
+    
 
     Controller controller;
     string key, input;

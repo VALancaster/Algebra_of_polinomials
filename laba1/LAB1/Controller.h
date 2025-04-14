@@ -19,7 +19,7 @@ class Controller // контроллер таблиц
 	vector<TTable<string, Polinom>*> tables;
 	TTable<string, Polinom>* active_table;
 public:
-	Controller(): active_table(nullptr) {}
+	Controller();
 	Controller(const Controller& source) = delete;
 	Controller& operator=(const Controller& source) = delete;
 
