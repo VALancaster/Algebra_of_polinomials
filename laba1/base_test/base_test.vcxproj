@@ -182,7 +182,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="base_test.cpp" />
+    <ClCompile Include="test_main.cpp" />
     <ClCompile Include="test_controller.cpp" />
     <ClCompile Include="test_monom.cpp" />
     <ClCompile Include="test_polinom.cpp" />
