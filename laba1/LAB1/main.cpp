@@ -1,9 +1,66 @@
 ﻿#include <iostream>
 #include <string>
+#include <limits>
 #include "Controller.h"
 #include "Polinom.h"
 
 using namespace std;
+
+// Функция для безопасного чтения целого числа
+int getIntInput(const string& prompt) {
+    int value;
+    while (true) {
+        cout << prompt;
+        cin >> value;
+        if (!cin.fail())
+            break;
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        cout << "Invalid input! Please enter a number." << endl;
+    }
+    cin.ignore(numeric_limits<streamsize>::max(), '\n'); // очистка оставшегося ввода
+    return value;
+}
+
+// Функция для безопасного чтения одного символа
+char getCharInput(const string& prompt) {
+    char c;
+    while (true) {
+        cout << prompt;
+        cin >> c;
+        if (!cin.fail())
+            break;
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        cout << "Invalid input! Please enter a character." << endl;
+    }
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    return c;
+}
+
+// Функция для безопасного чтения вещественного числа
+double getDoubleInput(const string& prompt) {
+    double value;
+    while (true) {
+        cout << prompt;
+        cin >> value;
+        if (!cin.fail())
+            break;
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        cout << "Invalid input! Please enter a valid number." << endl;
+    }
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    return value;
+}
+
+// Функция для безопасного чтения строки
+string getLineInput(const string& prompt) {
+    string line;
+    cout << prompt;
+    getline(cin, line);
+    return line;
+}
 
 void printMenu() {
     cout << "\n===== POLYNOMIAL MANAGEMENT MENU =====\n";
@@ -18,10 +75,9 @@ void printMenu() {
     cout << "Enter your choice: ";
 }
 
-int main() 
+int main()
 {
     setlocale(LC_ALL, "Russian");
-    
 
     Controller controller;
     string key, input;
@@ -29,9 +85,7 @@ int main()
 
     while (true) {
         printMenu();
-        int choice;
-        cin >> choice;
-        cin.ignore();
+        int choice = getIntInput("");
 
         cout << "\n" << endl;
 
@@ -42,10 +96,8 @@ int main()
                 << "2 - SortedArray\n"
                 << "3 - Tree\n"
                 << "4 - HashOpen\n"
-                << "5 - HashChain\n"
-                << "Your choice: ";
-            int index;
-            cin >> index;
+                << "5 - HashChain\n";
+            int index = getIntInput("Your choice: ");
             try {
                 controller.SetActiveTable(index);
             }
@@ -59,11 +111,8 @@ int main()
         }
 
         else if (choice == 3) {
-            cout << "Enter variable name for the polynomial: ";
-            cin >> key;
-            cin.ignore();
-            cout << "Enter polynomial (e.g., 2x^2y + 3xy^2 - 1): ";
-            getline(cin, input);
+            key = getLineInput("Enter variable name for the polynomial: ");
+            input = getLineInput("Enter polynomial (e.g., 2x^2y + 3xy^2 - 1): ");
             try {
                 Polinom p(input);
                 controller.AddPolinom(key, p);
@@ -74,17 +123,13 @@ int main()
         }
 
         else if (choice == 4) {
-            cout << "Enter name of polynomial to delete: ";
-            cin >> key;
+            key = getLineInput("Enter name of polynomial to delete: ");
             controller.DeletePolinom(key);
         }
 
         else if (choice == 5) {
-            cout << "Enter name for resulting polynomial: ";
-            cin >> key;
-            cin.ignore();
-            cout << "Enter expression with polynomial names (e.g., pol1 + pol2 * pol3): ";
-            getline(cin, input);
+            key = getLineInput("Enter name for resulting polynomial: ");
+            input = getLineInput("Enter expression with polynomial names (e.g., pol1 + pol2 * pol3): ");
             try {
                 Polinom result = controller.EvaluatePolinomExpression(key, input);
                 cout << "Polynomial '" << key << "' successfully calculated and saved.\n";
@@ -96,10 +141,8 @@ int main()
         }
 
         else if (choice == 6) {
-            cout << "Enter polynomial name: ";
-            cin >> key;
-            cout << "Enter variable (x, y or z) to differentiate by: ";
-            cin >> var;
+            key = getLineInput("Enter polynomial name: ");
+            var = getCharInput("Enter variable (x, y or z) to differentiate by: ");
             Polinom* p = controller.FindPolinom(key);
             if (!p) {
                 cout << "Polynomial with this key not found.\n";
@@ -110,11 +153,10 @@ int main()
         }
 
         else if (choice == 7) {
-            cout << "Enter polynomial name: ";
-            cin >> key;
-            double x, y, z;
-            cout << "Enter x, y, z values separated by spaces: ";
-            cin >> x >> y >> z;
+            key = getLineInput("Enter polynomial name: ");
+            double x = getDoubleInput("Enter x value: ");
+            double y = getDoubleInput("Enter y value: ");
+            double z = getDoubleInput("Enter z value: ");
             Polinom* p = controller.FindPolinom(key);
             if (!p) {
                 cout << "Polynomial with this key not found.\n";
