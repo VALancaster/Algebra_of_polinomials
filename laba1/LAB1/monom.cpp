@@ -7,51 +7,62 @@ using namespace std;
 
 Monom::Monom(double coef2, int x2, int y2, int z2) : coef(coef2), x(x2), y(y2), z(z2) {}
 
-Monom::Monom(const string& expression) 
+Monom::Monom(const string& expression)
 {
 	coef = 1.0;
-	x = 0;
-	y = 0;
-	z = 0;
-	istringstream stream(expression); // создается объект - потом ввода
-	bool negative = false; // знак монома
-	if (!stream.eof() && stream.peek() == '-') // stream.peek() - возвращает следующий символ из потока, не удаляя его из самого потока
+	x = 0; y = 0; z = 0;
+	istringstream stream(expression);
+
+	// Обработка знака
+	char sign = '+';
+	if (stream.peek() == '+' || stream.peek() == '-') 
 	{
-		negative = true;
-		stream.ignore(); // пропуск символа в потоке
+		sign = stream.get();
 	}
-	if (stream >> coef) // попытка извлечь коэффициент из потока
+
+	// Попытка чтения коэффициента
+	if (!(stream >> coef))
 	{
-		if (negative) 
-			coef = -coef;
+		coef = 1.0;  // Если коэффициент не указан, по умолчанию 1
+		stream.clear();
 	}
-	else 
+
+	if (sign == '-')
 	{
-		coef = 1.0 * (negative ? -1 : 1);
-		stream.clear(); // cброс флага состояния потока (ошибки fаilbit)
-		stream.seekg(0); // возврат указателя на начало потока для повторного чтения
+		coef = -coef;
 	}
-	char variable;
-	while (stream >> variable) 
+
+	// Чтение переменных и степеней
+	char var;
+	while (stream >> var) 
 	{
-		if (variable != 'x' || variable != 'y' || variable != 'z')
+		if (var != 'x' && var != 'y' && var != 'z') 
+		{
 			throw invalid_argument("Only variables 'x', 'y', 'z' are allowed");
-		int degree = 0;
+		}
+
+		int degree = 1;
 		if (stream.peek() == '^') 
 		{
 			stream.ignore();
-			stream >> degree;
+			if (!(stream >> degree)) 
+			{
+				throw invalid_argument("Invalid degree format");
+			}
 		}
-		else 
-			degree = 1;
-		if (degree < 0) 
-			throw invalid_argument("The degrees of the variables must be non-negative");
-		if (variable == 'x')
+
+		if (var == 'x') 
+		{
 			x = degree;
-		else if (variable == 'y')
+		}
+		else if (var == 'y')
+		{
 			y = degree;
-		else
+		}
+		else if (var == 'z')
+		{
 			z = degree;
+		}
 	}
 }
 

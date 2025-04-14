@@ -6,16 +6,16 @@
 using namespace std;
 
 void printMenu() {
-    cout << "\n===== МЕНЮ УПРАВЛЕНИЯ ПОЛИНОМАМИ =====\n";
-    cout << "1. Выбрать активную таблицу\n";
-    cout << "2. Вывести содержимое активной таблицы\n";
-    cout << "3. Добавить полином в таблицы\n";
-    cout << "4. Удалить полином по ключу\n";
-    cout << "5. Вычислить и сохранить полиномное выражение\n";
-    cout << "6. Взять производную от полинома\n";
-    cout << "7. Вычислить значение полинома в точке\n";
-    cout << "8. Выйти\n";
-    cout << "Выберите действие: ";
+    cout << "\n===== POLYNOMIAL MANAGEMENT MENU =====\n";
+    cout << "1. Select active table\n";
+    cout << "2. Show active table contents\n";
+    cout << "3. Add polynomial to tables\n";
+    cout << "4. Delete polynomial by key\n";
+    cout << "5. Evaluate and save polynomial expression\n";
+    cout << "6. Calculate polynomial derivative\n";
+    cout << "7. Evaluate polynomial at point\n";
+    cout << "8. Exit\n";
+    cout << "Enter your choice: ";
 }
 
 int main() 
@@ -33,22 +33,24 @@ int main()
         cin >> choice;
         cin.ignore();
 
+        cout << "\n" << endl;
+
         if (choice == 1) {
-            cout << "Выберите таблицу:\n"
+            cout << "Select table type:\n"
                 << "0 - Array\n"
                 << "1 - List\n"
                 << "2 - SortedArray\n"
                 << "3 - Tree\n"
                 << "4 - HashOpen\n"
                 << "5 - HashChain\n"
-                << "Ваш выбор: ";
+                << "Your choice: ";
             int index;
             cin >> index;
             try {
                 controller.SetActiveTable(index);
             }
             catch (const exception& e) {
-                cerr << "Ошибка: " << e.what() << endl;
+                cerr << "Error: " << e.what() << endl;
             }
         }
 
@@ -57,79 +59,79 @@ int main()
         }
 
         else if (choice == 3) {
-            cout << "Введите название переменной для полинома: ";
+            cout << "Enter variable name for the polynomial: ";
             cin >> key;
             cin.ignore();
-            cout << "Введите полином (например: 2x^2y + 3xy^2 - 1): ";
+            cout << "Enter polynomial (e.g., 2x^2y + 3xy^2 - 1): ";
             getline(cin, input);
             try {
                 Polinom p(input);
                 controller.AddPolinom(key, p);
             }
             catch (const exception& e) {
-                cerr << "Ошибка при создании полинома: " << e.what() << endl;
+                cerr << "Error creating polynomial: " << e.what() << endl;
             }
         }
 
         else if (choice == 4) {
-            cout << "Введите название удаляемого полинома: ";
+            cout << "Enter name of polynomial to delete: ";
             cin >> key;
             controller.DeletePolinom(key);
         }
 
         else if (choice == 5) {
-            cout << "Введите название результирующего полинома: ";
+            cout << "Enter name for resulting polynomial: ";
             cin >> key;
             cin.ignore();
-            cout << "Введите выражение с именами полиномов (например: pol1 + pol2 * pol3): ";
+            cout << "Enter expression with polynomial names (e.g., pol1 + pol2 * pol3): ";
             getline(cin, input);
             try {
                 Polinom result = controller.EvaluatePolinomExpression(key, input);
-                cout << "Полином '" << key << "' успешно вычислен и сохранён.\n";
-                cout << "Результат: " << result << endl;
+                cout << "Polynomial '" << key << "' successfully calculated and saved.\n";
+                cout << "Result: " << result << endl;
             }
             catch (const exception& e) {
-                cerr << "Ошибка при вычислении: " << e.what() << endl;
+                cerr << "Calculation error: " << e.what() << endl;
             }
         }
 
         else if (choice == 6) {
-            cout << "Введите название полинома: ";
+            cout << "Enter polynomial name: ";
             cin >> key;
-            cout << "Введите переменную (x, y или z), по которой брать производную: ";
+            cout << "Enter variable (x, y or z) to differentiate by: ";
             cin >> var;
             Polinom* p = controller.FindPolinom(key);
             if (!p) {
-                cout << "Полином с таким ключом не найден.\n";
+                cout << "Polynomial with this key not found.\n";
             }
             else {
-                cout << "Производная: " << p->derivative(var) << endl;
+                cout << "Derivative: " << p->derivative(var) << endl;
             }
         }
 
         else if (choice == 7) {
-            cout << "Введите название полинома: ";
+            cout << "Enter polynomial name: ";
             cin >> key;
             double x, y, z;
-            cout << "Введите значения x, y, z через пробел: ";
+            cout << "Enter x, y, z values separated by spaces: ";
             cin >> x >> y >> z;
             Polinom* p = controller.FindPolinom(key);
             if (!p) {
-                cout << "Полином с таким ключом не найден.\n";
+                cout << "Polynomial with this key not found.\n";
             }
             else {
                 double value = p->evaluate(x, y, z);
-                cout << "Значение полинома в точке: " << value << endl;
+                cout << "Polynomial value at point: " << value << endl;
             }
         }
 
         else if (choice == 8) {
-            cout << "Завершение работы.\n";
+            cout << "Exiting program.\n";
             break;
         }
 
         else {
-            cout << "Неверный ввод. Повторите попытку.\n";
+            cout << "Invalid input. Please try again.\n";
         }
     }
 

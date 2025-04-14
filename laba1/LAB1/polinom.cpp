@@ -74,7 +74,8 @@ double Polinom::evaluate(double x, double y, double z) const
 	return result;
 }
 
-string Polinom::toString() const {
+string Polinom::toString() const 
+{
 	string result = ""; // сначала пустая строка
 
 	for (size_t i = 0; i < monoms.length(); ++i) 
@@ -85,9 +86,16 @@ string Polinom::toString() const {
 		{
 			if (result.empty()) // текущий моном - первый
 				result = monomStr;
-			else 
-				result += monomStr[0] == '-' ? monomStr : "+" + monomStr; // если моном начинается с минуса, он добавляется как есть
-				// если моном начинается с плюса, перед ним добавляется знак +
+			else
+			{
+				// Добавляем знак только если моном положительный
+				if (monom.coef > 0) {
+					result += "+" + monomStr;
+				}
+				else {
+					result += monomStr; // Отрицательный моном уже содержит "-"
+				}
+			}
 		}
 	}
 	return result.empty() ? "0" : result; // если строка осталась пустой - вернется '0', иначе полином
