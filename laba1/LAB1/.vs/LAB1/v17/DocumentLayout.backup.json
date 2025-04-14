@@ -55,7 +55,7 @@
               "RelativeDocumentMoniker": "..\\base_test\\test_main.cpp",
               "ToolTip": "C:\\Users\\vkutergi\\source\\Algebra_of_polinomials\\laba1\\base_test\\test_main.cpp",
               "RelativeToolTip": "..\\base_test\\test_main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-14T15:45:00.04Z",
               "EditorCaption": ""
@@ -70,8 +70,7 @@
               "RelativeToolTip": "monom.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-14T14:47:07.996Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T14:47:07.996Z"
             },
             {
               "$type": "Document",
