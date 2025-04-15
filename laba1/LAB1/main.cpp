@@ -85,6 +85,7 @@ int main()
 
     while (true) {
         printMenu();
+
         int choice = getIntInput("");
 
         cout << "\n" << endl;

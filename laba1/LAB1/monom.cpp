@@ -20,10 +20,25 @@ Monom::Monom(const string& expression)
 		sign = stream.get();
 	}
 
+	/*
 	// Попытка чтения коэффициента
 	if (!(stream >> coef))
 	{
 		coef = 1.0;  // Если коэффициент не указан, по умолчанию 1
+		stream.clear();
+	}
+	*/
+	stream >> std::ws;
+
+	double parsedCoef;
+
+	if (stream >> parsedCoef)
+	{
+		coef = parsedCoef;
+	}
+	else
+	{
+		coef = 1.0;
 		stream.clear();
 	}
 
